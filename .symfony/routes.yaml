@@ -1,5 +1,13 @@
 "http://{all}/":
+    type: upstream
+    # Route requests to the "app" application
+    upstream: "tartare:http"
+
+"https://{all}/":
     type: redirect
     # Redirect from HTTP to HTTPS
     to: "https://{all}/"
-
+    
+"https://*.{default}/":
+    type: upstream
+    upstream: "app:http"
