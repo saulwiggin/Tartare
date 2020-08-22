@@ -1,0 +1,147 @@
+<?php //%255BApp%255CEntity%255CTaxonomy%255CTaxonTranslation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Taxonomy\\TaxonTranslation',
+            ],
+            'namespace' => [
+                'App\\Entity\\Taxonomy',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Taxonomy\\TaxonTranslation',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'columnName' => 'name',
+                        'declared' => 'Sylius\\Component\\Taxonomy\\Model\\TaxonTranslation',
+                    ],
+                    'slug' => [
+                        'fieldName' => 'slug',
+                        'type' => 'string',
+                        'columnName' => 'slug',
+                        'unique' => false,
+                        'declared' => 'Sylius\\Component\\Taxonomy\\Model\\TaxonTranslation',
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'text',
+                        'columnName' => 'description',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Taxonomy\\Model\\TaxonTranslation',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Taxonomy\\Model\\TaxonTranslation',
+                    ],
+                    'locale' => [
+                        'fieldName' => 'locale',
+                        'type' => 'string',
+                        'nullable' => false,
+                        'columnName' => 'locale',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'name' => 'name',
+                    'slug' => 'slug',
+                    'description' => 'description',
+                    'id' => 'id',
+                    'locale' => 'locale',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'name' => 'name',
+                    'slug' => 'slug',
+                    'description' => 'description',
+                    'id' => 'id',
+                    'locale' => 'locale',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_taxon_translation',
+                    'uniqueConstraints' => [
+                        'slug_uidx' => [
+                            'columns' => [
+                                'locale',
+                                'slug',
+                            ],
+                        ],
+                        'sylius_taxon_translation_uniq_trans' => [
+                            'columns' => [
+                                'translatable_id',
+                                'locale',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'translatable' => [
+                        'fieldName' => 'translatable',
+                        'targetEntity' => 'App\\Entity\\Taxonomy\\Taxon',
+                        'inversedBy' => 'translations',
+                        'joinColumns' => [
+                            [
+                                'name' => 'translatable_id',
+                                'referencedColumnName' => 'id',
+                                'onDelete' => 'CASCADE',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'translatable_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'translatable_id' => 'translatable_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'translatable_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

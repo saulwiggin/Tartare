@@ -1,0 +1,147 @@
+<?php //%255BApp%255CEntity%255CProduct%255CProductOption%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Product\\ProductOption',
+            ],
+            'namespace' => [
+                'App\\Entity\\Product',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Product\\ProductOption',
+            ],
+            'customRepositoryClassName' => [
+                'Sylius\\Bundle\\CoreBundle\\Doctrine\\ORM\\ProductOptionRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOption',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOption',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOption',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOption',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOption',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'position' => 'position',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'position' => 'position',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product_option',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'translations' => [
+                        'fieldName' => 'translations',
+                        'targetEntity' => 'App\\Entity\\Product\\ProductOptionTranslation',
+                        'mappedBy' => 'translatable',
+                        'fetch' => 4,
+                        'indexBy' => 'locale',
+                        'cascade' => [
+                            'persist',
+                            'merge',
+                            'remove',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Product\\ProductOption',
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => false,
+                    ],
+                    'values' => [
+                        'fieldName' => 'values',
+                        'targetEntity' => 'App\\Entity\\Product\\ProductOptionValue',
+                        'mappedBy' => 'option',
+                        'cascade' => [
+                            'remove',
+                            'persist',
+                            'refresh',
+                            'merge',
+                            'detach',
+                        ],
+                        'orphanRemoval' => true,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Product\\ProductOption',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => true,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => true,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

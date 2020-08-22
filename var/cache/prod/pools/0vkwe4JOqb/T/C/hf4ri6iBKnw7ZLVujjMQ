@@ -1,0 +1,203 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CAddress%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\Address',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\Address',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'columnName' => 'first_name',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'columnName' => 'last_name',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'phoneNumber' => [
+                        'fieldName' => 'phoneNumber',
+                        'type' => 'string',
+                        'columnName' => 'phone_number',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'street' => [
+                        'fieldName' => 'street',
+                        'type' => 'string',
+                        'columnName' => 'street',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'company' => [
+                        'fieldName' => 'company',
+                        'type' => 'string',
+                        'columnName' => 'company',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'city' => [
+                        'fieldName' => 'city',
+                        'type' => 'string',
+                        'columnName' => 'city',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'postcode' => [
+                        'fieldName' => 'postcode',
+                        'type' => 'string',
+                        'columnName' => 'postcode',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'countryCode' => [
+                        'fieldName' => 'countryCode',
+                        'type' => 'string',
+                        'columnName' => 'country_code',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'provinceCode' => [
+                        'fieldName' => 'provinceCode',
+                        'type' => 'string',
+                        'columnName' => 'province_code',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'provinceName' => [
+                        'fieldName' => 'provinceName',
+                        'type' => 'string',
+                        'columnName' => 'province_name',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Address',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                    'phone_number' => 'phoneNumber',
+                    'street' => 'street',
+                    'company' => 'company',
+                    'city' => 'city',
+                    'postcode' => 'postcode',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'country_code' => 'countryCode',
+                    'province_code' => 'provinceCode',
+                    'province_name' => 'provinceName',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                    'phoneNumber' => 'phone_number',
+                    'street' => 'street',
+                    'company' => 'company',
+                    'city' => 'city',
+                    'postcode' => 'postcode',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'countryCode' => 'country_code',
+                    'provinceCode' => 'province_code',
+                    'provinceName' => 'province_name',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_address',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'customer' => [
+                        'fieldName' => 'customer',
+                        'targetEntity' => 'App\\Entity\\Customer\\Customer',
+                        'inversedBy' => 'addresses',
+                        'joinColumns' => [
+                            [
+                                'name' => 'customer_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Address',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'customer_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'customer_id' => 'customer_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'customer_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

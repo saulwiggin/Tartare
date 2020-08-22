@@ -1,0 +1,116 @@
+<?php //%255BApp%255CEntity%255CAddressing%255CCountry%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Addressing\\Country',
+            ],
+            'namespace' => [
+                'App\\Entity\\Addressing',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Addressing\\Country',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'length' => 2,
+                        'unique' => true,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Country',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'enabled',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Country',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\Country',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'enabled' => 'enabled',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'enabled' => 'enabled',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_country',
+                    'indexes' => [
+                        [
+                            'columns' => [
+                                'code',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'provinces' => [
+                        'fieldName' => 'provinces',
+                        'targetEntity' => 'App\\Entity\\Addressing\\Province',
+                        'mappedBy' => 'country',
+                        'cascade' => [
+                            'remove',
+                            'persist',
+                            'refresh',
+                            'merge',
+                            'detach',
+                        ],
+                        'orphanRemoval' => true,
+                        'orderBy' => [
+                            'name' => 'ASC',
+                        ],
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Addressing\\Country',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => true,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => true,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

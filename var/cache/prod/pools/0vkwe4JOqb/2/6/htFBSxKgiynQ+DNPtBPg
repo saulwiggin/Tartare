@@ -1,0 +1,138 @@
+<?php //%255BBitBag%255CSyliusCmsPlugin%255CEntity%255CPageTranslation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\PageTranslation',
+            ],
+            'namespace' => [
+                'BitBag\\SyliusCmsPlugin\\Entity',
+            ],
+            'rootEntityName' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\PageTranslation',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                    'slug' => [
+                        'fieldName' => 'slug',
+                        'type' => 'string',
+                        'columnName' => 'slug',
+                        'nullable' => true,
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'columnName' => 'name',
+                        'nullable' => true,
+                    ],
+                    'breadcrumb' => [
+                        'fieldName' => 'breadcrumb',
+                        'type' => 'string',
+                        'columnName' => 'breadcrumb',
+                        'nullable' => true,
+                    ],
+                    'nameWhenLinked' => [
+                        'fieldName' => 'nameWhenLinked',
+                        'type' => 'string',
+                        'columnName' => 'name_when_linked',
+                        'nullable' => true,
+                    ],
+                    'descriptionWhenLinked' => [
+                        'fieldName' => 'descriptionWhenLinked',
+                        'type' => 'string',
+                        'columnName' => 'description_when_linked',
+                        'length' => 1000,
+                        'nullable' => true,
+                    ],
+                    'metaKeywords' => [
+                        'fieldName' => 'metaKeywords',
+                        'type' => 'string',
+                        'columnName' => 'meta_keywords',
+                        'length' => 1000,
+                        'nullable' => true,
+                    ],
+                    'metaDescription' => [
+                        'fieldName' => 'metaDescription',
+                        'type' => 'string',
+                        'columnName' => 'meta_description',
+                        'length' => 5000,
+                        'nullable' => true,
+                    ],
+                    'content' => [
+                        'fieldName' => 'content',
+                        'type' => 'text',
+                        'columnName' => 'content',
+                        'nullable' => true,
+                    ],
+                    'title' => [
+                        'fieldName' => 'title',
+                        'type' => 'string',
+                        'columnName' => 'title',
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'slug' => 'slug',
+                    'name' => 'name',
+                    'breadcrumb' => 'breadcrumb',
+                    'name_when_linked' => 'nameWhenLinked',
+                    'description_when_linked' => 'descriptionWhenLinked',
+                    'meta_keywords' => 'metaKeywords',
+                    'meta_description' => 'metaDescription',
+                    'content' => 'content',
+                    'title' => 'title',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'slug' => 'slug',
+                    'name' => 'name',
+                    'breadcrumb' => 'breadcrumb',
+                    'nameWhenLinked' => 'name_when_linked',
+                    'descriptionWhenLinked' => 'description_when_linked',
+                    'metaKeywords' => 'meta_keywords',
+                    'metaDescription' => 'meta_description',
+                    'content' => 'content',
+                    'title' => 'title',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'bitbag_cms_page_translation',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

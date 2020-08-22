@@ -1,0 +1,143 @@
+<?php //%255BSylius%255CComponent%255COrder%255CModel%255COrderItem%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Order\\Model\\OrderItem',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Order\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Order\\Model\\OrderItem',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'quantity' => [
+                        'fieldName' => 'quantity',
+                        'type' => 'integer',
+                        'columnName' => 'quantity',
+                    ],
+                    'unitPrice' => [
+                        'fieldName' => 'unitPrice',
+                        'type' => 'integer',
+                        'columnName' => 'unit_price',
+                    ],
+                    'unitsTotal' => [
+                        'fieldName' => 'unitsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'units_total',
+                    ],
+                    'adjustmentsTotal' => [
+                        'fieldName' => 'adjustmentsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'adjustments_total',
+                    ],
+                    'total' => [
+                        'fieldName' => 'total',
+                        'type' => 'integer',
+                        'columnName' => 'total',
+                    ],
+                    'immutable' => [
+                        'fieldName' => 'immutable',
+                        'type' => 'boolean',
+                        'columnName' => 'is_immutable',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'quantity' => 'quantity',
+                    'unit_price' => 'unitPrice',
+                    'units_total' => 'unitsTotal',
+                    'adjustments_total' => 'adjustmentsTotal',
+                    'total' => 'total',
+                    'is_immutable' => 'immutable',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'quantity' => 'quantity',
+                    'unitPrice' => 'unit_price',
+                    'unitsTotal' => 'units_total',
+                    'adjustmentsTotal' => 'adjustments_total',
+                    'total' => 'total',
+                    'immutable' => 'is_immutable',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_order_item',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'order' => [
+                        'fieldName' => 'order',
+                        'targetEntity' => 'App\\Entity\\Order\\Order',
+                        'inversedBy' => 'items',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Order\\Model\\OrderItem',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_id' => 'order_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

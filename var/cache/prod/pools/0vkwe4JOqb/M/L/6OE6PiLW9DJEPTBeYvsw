@@ -1,0 +1,167 @@
+<?php //%255BSylius%255CComponent%255CCurrency%255CModel%255CExchangeRate%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Currency\\Model\\ExchangeRate',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Currency\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Currency\\Model\\ExchangeRate',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'ratio' => [
+                        'fieldName' => 'ratio',
+                        'type' => 'decimal',
+                        'columnName' => 'ratio',
+                        'precision' => 10,
+                        'scale' => 5,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'ratio' => 'ratio',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'ratio' => 'ratio',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_exchange_rate',
+                    'uniqueConstraints' => [
+                        [
+                            'columns' => [
+                                'source_currency',
+                                'target_currency',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'sourceCurrency' => [
+                        'fieldName' => 'sourceCurrency',
+                        'targetEntity' => 'App\\Entity\\Currency\\Currency',
+                        'joinColumns' => [
+                            [
+                                'name' => 'source_currency',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Currency\\Model\\ExchangeRate',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'source_currency' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'source_currency' => 'source_currency',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'source_currency',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'targetCurrency' => [
+                        'fieldName' => 'targetCurrency',
+                        'targetEntity' => 'App\\Entity\\Currency\\Currency',
+                        'joinColumns' => [
+                            [
+                                'name' => 'target_currency',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Currency\\Model\\ExchangeRate',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'target_currency' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'target_currency' => 'target_currency',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'target_currency',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

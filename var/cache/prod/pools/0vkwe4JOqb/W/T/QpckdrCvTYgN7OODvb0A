@@ -1,0 +1,108 @@
+<?php //%255BSylius%255CComponent%255CPayment%255CModel%255CPaymentMethod%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Payment\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                    ],
+                    'environment' => [
+                        'fieldName' => 'environment',
+                        'type' => 'string',
+                        'columnName' => 'environment',
+                        'nullable' => true,
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'is_enabled',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'environment' => 'environment',
+                    'is_enabled' => 'enabled',
+                    'position' => 'position',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'environment' => 'environment',
+                    'enabled' => 'is_enabled',
+                    'position' => 'position',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_payment_method',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

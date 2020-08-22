@@ -1,0 +1,114 @@
+<?php //%255BApp%255CEntity%255CAddressing%255CZoneMember%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Addressing\\ZoneMember',
+            ],
+            'namespace' => [
+                'App\\Entity\\Addressing',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Addressing\\ZoneMember',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\ZoneMember',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\ZoneMember',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_zone_member',
+                    'uniqueConstraints' => [
+                        [
+                            'columns' => [
+                                'belongs_to',
+                                'code',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'belongsTo' => [
+                        'fieldName' => 'belongsTo',
+                        'targetEntity' => 'App\\Entity\\Addressing\\Zone',
+                        'inversedBy' => 'members',
+                        'joinColumns' => [
+                            [
+                                'name' => 'belongs_to',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Addressing\\ZoneMember',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'belongs_to' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'belongs_to' => 'belongs_to',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'belongs_to',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Addressing\\Model\\ZoneMember',
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

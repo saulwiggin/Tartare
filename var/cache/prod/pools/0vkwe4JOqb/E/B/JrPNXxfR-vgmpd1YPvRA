@@ -1,0 +1,139 @@
+<?php //%255BSylius%255CComponent%255COrder%255CModel%255COrder%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Order\\Model\\Order',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Order\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Order\\Model\\Order',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'number' => [
+                        'fieldName' => 'number',
+                        'type' => 'string',
+                        'columnName' => 'number',
+                        'unique' => true,
+                        'nullable' => true,
+                    ],
+                    'notes' => [
+                        'fieldName' => 'notes',
+                        'type' => 'text',
+                        'columnName' => 'notes',
+                        'nullable' => true,
+                    ],
+                    'state' => [
+                        'fieldName' => 'state',
+                        'type' => 'string',
+                        'columnName' => 'state',
+                    ],
+                    'checkoutCompletedAt' => [
+                        'fieldName' => 'checkoutCompletedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'checkout_completed_at',
+                        'nullable' => true,
+                    ],
+                    'itemsTotal' => [
+                        'fieldName' => 'itemsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'items_total',
+                    ],
+                    'adjustmentsTotal' => [
+                        'fieldName' => 'adjustmentsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'adjustments_total',
+                    ],
+                    'total' => [
+                        'fieldName' => 'total',
+                        'type' => 'integer',
+                        'columnName' => 'total',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'number' => 'number',
+                    'notes' => 'notes',
+                    'state' => 'state',
+                    'checkout_completed_at' => 'checkoutCompletedAt',
+                    'items_total' => 'itemsTotal',
+                    'adjustments_total' => 'adjustmentsTotal',
+                    'total' => 'total',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'number' => 'number',
+                    'notes' => 'notes',
+                    'state' => 'state',
+                    'checkoutCompletedAt' => 'checkout_completed_at',
+                    'itemsTotal' => 'items_total',
+                    'adjustmentsTotal' => 'adjustments_total',
+                    'total' => 'total',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_order',
+                    'indexes' => [
+                        [
+                            'columns' => [
+                                'state',
+                                'updated_at',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,172 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CPromotionCoupon%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\PromotionCoupon',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\PromotionCoupon',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'unique' => true,
+                        'columnName' => 'code',
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'usageLimit' => [
+                        'fieldName' => 'usageLimit',
+                        'type' => 'integer',
+                        'columnName' => 'usage_limit',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'used' => [
+                        'fieldName' => 'used',
+                        'type' => 'integer',
+                        'columnName' => 'used',
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'expiresAt' => [
+                        'fieldName' => 'expiresAt',
+                        'type' => 'datetime',
+                        'columnName' => 'expires_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                    'perCustomerUsageLimit' => [
+                        'fieldName' => 'perCustomerUsageLimit',
+                        'type' => 'integer',
+                        'columnName' => 'per_customer_usage_limit',
+                        'nullable' => true,
+                    ],
+                    'reusableFromCancelledOrders' => [
+                        'fieldName' => 'reusableFromCancelledOrders',
+                        'type' => 'boolean',
+                        'columnName' => 'reusable_from_cancelled_orders',
+                        'options' => [
+                            'default' => '1',
+                        ],
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'usage_limit' => 'usageLimit',
+                    'used' => 'used',
+                    'expires_at' => 'expiresAt',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                    'per_customer_usage_limit' => 'perCustomerUsageLimit',
+                    'reusable_from_cancelled_orders' => 'reusableFromCancelledOrders',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'usageLimit' => 'usage_limit',
+                    'used' => 'used',
+                    'expiresAt' => 'expires_at',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                    'perCustomerUsageLimit' => 'per_customer_usage_limit',
+                    'reusableFromCancelledOrders' => 'reusable_from_cancelled_orders',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_promotion_coupon',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'promotion' => [
+                        'fieldName' => 'promotion',
+                        'targetEntity' => 'App\\Entity\\Promotion\\Promotion',
+                        'inversedBy' => 'coupons',
+                        'joinColumns' => [
+                            [
+                                'name' => 'promotion_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\PromotionCoupon',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'promotion_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'promotion_id' => 'promotion_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'promotion_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Promotion\\Model\\PromotionCoupon',
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

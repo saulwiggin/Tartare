@@ -1,0 +1,122 @@
+<?php //%255BSylius%255CComponent%255CProduct%255CModel%255CProductAttribute%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Product\\Model\\ProductAttribute',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Product\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Product\\Model\\ProductAttribute',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'type',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'storageType' => [
+                        'fieldName' => 'storageType',
+                        'type' => 'string',
+                        'columnName' => 'storage_type',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'configuration' => [
+                        'fieldName' => 'configuration',
+                        'type' => 'array',
+                        'columnName' => 'configuration',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\Attribute',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'type' => 'type',
+                    'storage_type' => 'storageType',
+                    'configuration' => 'configuration',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'position' => 'position',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'type' => 'type',
+                    'storageType' => 'storage_type',
+                    'configuration' => 'configuration',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'position' => 'position',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product_attribute',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

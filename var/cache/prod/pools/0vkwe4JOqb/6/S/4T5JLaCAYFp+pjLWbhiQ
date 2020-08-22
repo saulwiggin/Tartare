@@ -1,0 +1,153 @@
+<?php //%255BSylius%255CComponent%255CPromotion%255CModel%255CPromotion%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Promotion\\Model\\Promotion',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Promotion\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Promotion\\Model\\Promotion',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'unique' => true,
+                        'columnName' => 'code',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'columnName' => 'name',
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'string',
+                        'nullable' => true,
+                        'columnName' => 'description',
+                    ],
+                    'priority' => [
+                        'fieldName' => 'priority',
+                        'type' => 'integer',
+                        'columnName' => 'priority',
+                    ],
+                    'exclusive' => [
+                        'fieldName' => 'exclusive',
+                        'type' => 'boolean',
+                        'columnName' => 'exclusive',
+                    ],
+                    'usageLimit' => [
+                        'fieldName' => 'usageLimit',
+                        'type' => 'integer',
+                        'columnName' => 'usage_limit',
+                        'nullable' => true,
+                    ],
+                    'used' => [
+                        'fieldName' => 'used',
+                        'type' => 'integer',
+                        'columnName' => 'used',
+                    ],
+                    'couponBased' => [
+                        'fieldName' => 'couponBased',
+                        'type' => 'boolean',
+                        'columnName' => 'coupon_based',
+                    ],
+                    'startsAt' => [
+                        'fieldName' => 'startsAt',
+                        'type' => 'datetime',
+                        'columnName' => 'starts_at',
+                        'nullable' => true,
+                    ],
+                    'endsAt' => [
+                        'fieldName' => 'endsAt',
+                        'type' => 'datetime',
+                        'columnName' => 'ends_at',
+                        'nullable' => true,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'name' => 'name',
+                    'description' => 'description',
+                    'priority' => 'priority',
+                    'exclusive' => 'exclusive',
+                    'usage_limit' => 'usageLimit',
+                    'used' => 'used',
+                    'coupon_based' => 'couponBased',
+                    'starts_at' => 'startsAt',
+                    'ends_at' => 'endsAt',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'name' => 'name',
+                    'description' => 'description',
+                    'priority' => 'priority',
+                    'exclusive' => 'exclusive',
+                    'usageLimit' => 'usage_limit',
+                    'used' => 'used',
+                    'couponBased' => 'coupon_based',
+                    'startsAt' => 'starts_at',
+                    'endsAt' => 'ends_at',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_promotion',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

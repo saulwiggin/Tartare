@@ -1,0 +1,87 @@
+<?php //%255BBitBag%255CSyliusCmsPlugin%255CEntity%255CBlockTranslation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\BlockTranslation',
+            ],
+            'namespace' => [
+                'BitBag\\SyliusCmsPlugin\\Entity',
+            ],
+            'rootEntityName' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\BlockTranslation',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'columnName' => 'name',
+                        'nullable' => true,
+                    ],
+                    'content' => [
+                        'fieldName' => 'content',
+                        'type' => 'text',
+                        'columnName' => 'content',
+                        'nullable' => true,
+                    ],
+                    'link' => [
+                        'fieldName' => 'link',
+                        'type' => 'text',
+                        'columnName' => 'link',
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'content' => 'content',
+                    'link' => 'link',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'name' => 'name',
+                    'content' => 'content',
+                    'link' => 'link',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'bitbag_cms_block_translation',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

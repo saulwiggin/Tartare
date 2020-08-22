@@ -1,0 +1,101 @@
+<?php //%255B78299a4e54d38c6987fa6a5a95bb0038%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'date' => [
+                        0,
+                        1,
+                    ],
+                    'channel' => [
+                        2,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.code AS code_0, s0_.name AS name_1, s0_.description AS description_2, s0_.priority AS priority_3, s0_.exclusive AS exclusive_4, s0_.usage_limit AS usage_limit_5, s0_.used AS used_6, s0_.coupon_based AS coupon_based_7, s0_.starts_at AS starts_at_8, s0_.ends_at AS ends_at_9, s0_.created_at AS created_at_10, s0_.updated_at AS updated_at_11, s0_.id AS id_12 FROM sylius_promotion s0_ WHERE (s0_.starts_at IS NULL OR s0_.starts_at < ?) AND (s0_.ends_at IS NULL OR s0_.ends_at > ?) AND EXISTS (SELECT 1 FROM sylius_promotion_channels s1_ INNER JOIN sylius_channel s2_ ON s1_.channel_id = s2_.id WHERE s1_.promotion_id = s0_.id AND s2_.id IN (?)) ORDER BY s0_.priority DESC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Promotion\\Promotion',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'code_0' => 'code',
+                    'name_1' => 'name',
+                    'description_2' => 'description',
+                    'priority_3' => 'priority',
+                    'exclusive_4' => 'exclusive',
+                    'usage_limit_5' => 'usageLimit',
+                    'used_6' => 'used',
+                    'coupon_based_7' => 'couponBased',
+                    'starts_at_8' => 'startsAt',
+                    'ends_at_9' => 'endsAt',
+                    'created_at_10' => 'createdAt',
+                    'updated_at_11' => 'updatedAt',
+                    'id_12' => 'id',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'code_0' => 'o',
+                    'name_1' => 'o',
+                    'description_2' => 'o',
+                    'priority_3' => 'o',
+                    'exclusive_4' => 'o',
+                    'usage_limit_5' => 'o',
+                    'used_6' => 'o',
+                    'coupon_based_7' => 'o',
+                    'starts_at_8' => 'o',
+                    'ends_at_9' => 'o',
+                    'created_at_10' => 'o',
+                    'updated_at_11' => 'o',
+                    'id_12' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'code_0' => 'App\\Entity\\Promotion\\Promotion',
+                    'name_1' => 'App\\Entity\\Promotion\\Promotion',
+                    'description_2' => 'App\\Entity\\Promotion\\Promotion',
+                    'priority_3' => 'App\\Entity\\Promotion\\Promotion',
+                    'exclusive_4' => 'App\\Entity\\Promotion\\Promotion',
+                    'usage_limit_5' => 'App\\Entity\\Promotion\\Promotion',
+                    'used_6' => 'App\\Entity\\Promotion\\Promotion',
+                    'coupon_based_7' => 'App\\Entity\\Promotion\\Promotion',
+                    'starts_at_8' => 'App\\Entity\\Promotion\\Promotion',
+                    'ends_at_9' => 'App\\Entity\\Promotion\\Promotion',
+                    'created_at_10' => 'App\\Entity\\Promotion\\Promotion',
+                    'updated_at_11' => 'App\\Entity\\Promotion\\Promotion',
+                    'id_12' => 'App\\Entity\\Promotion\\Promotion',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,93 @@
+<?php //%255BApp%255CEntity%255CAdminApi%255CClient%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\AdminApi\\Client',
+            ],
+            'namespace' => [
+                'App\\Entity\\AdminApi',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\AdminApi\\Client',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'randomId' => [
+                        'fieldName' => 'randomId',
+                        'type' => 'string',
+                        'columnName' => 'random_id',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'redirectUris' => [
+                        'fieldName' => 'redirectUris',
+                        'type' => 'array',
+                        'columnName' => 'redirect_uris',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'secret' => [
+                        'fieldName' => 'secret',
+                        'type' => 'string',
+                        'columnName' => 'secret',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'allowedGrantTypes' => [
+                        'fieldName' => 'allowedGrantTypes',
+                        'type' => 'array',
+                        'columnName' => 'allowed_grant_types',
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\Client',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Bundle\\AdminApiBundle\\Model\\Client',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'random_id' => 'randomId',
+                    'redirect_uris' => 'redirectUris',
+                    'secret' => 'secret',
+                    'allowed_grant_types' => 'allowedGrantTypes',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'randomId' => 'random_id',
+                    'redirectUris' => 'redirect_uris',
+                    'secret' => 'secret',
+                    'allowedGrantTypes' => 'allowed_grant_types',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_admin_api_client',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,87 @@
+<?php //%255BSylius%255CBundle%255CPayumBundle%255CModel%255CGatewayConfig%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Bundle\\PayumBundle\\Model\\GatewayConfig',
+            ],
+            'namespace' => [
+                'Sylius\\Bundle\\PayumBundle\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Bundle\\PayumBundle\\Model\\GatewayConfig',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'gatewayName' => [
+                        'fieldName' => 'gatewayName',
+                        'type' => 'string',
+                        'columnName' => 'gateway_name',
+                        'declared' => 'Payum\\Core\\Model\\GatewayConfig',
+                    ],
+                    'factoryName' => [
+                        'fieldName' => 'factoryName',
+                        'type' => 'string',
+                        'columnName' => 'factory_name',
+                        'declared' => 'Payum\\Core\\Model\\GatewayConfig',
+                    ],
+                    'config' => [
+                        'fieldName' => 'config',
+                        'type' => 'json_array',
+                        'columnName' => 'config',
+                        'declared' => 'Payum\\Core\\Model\\GatewayConfig',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'gateway_name' => 'gatewayName',
+                    'factory_name' => 'factoryName',
+                    'config' => 'config',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'gatewayName' => 'gateway_name',
+                    'factoryName' => 'factory_name',
+                    'config' => 'config',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_gateway_config',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

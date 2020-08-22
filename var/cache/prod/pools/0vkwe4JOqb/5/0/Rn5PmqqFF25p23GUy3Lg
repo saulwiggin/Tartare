@@ -1,0 +1,244 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CShippingMethod%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\ShippingMethod',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\ShippingMethod',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'configuration' => [
+                        'fieldName' => 'configuration',
+                        'type' => 'array',
+                        'columnName' => 'configuration',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'categoryRequirement' => [
+                        'fieldName' => 'categoryRequirement',
+                        'type' => 'integer',
+                        'columnName' => 'category_requirement',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'calculator' => [
+                        'fieldName' => 'calculator',
+                        'type' => 'string',
+                        'columnName' => 'calculator',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'is_enabled',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'archivedAt' => [
+                        'fieldName' => 'archivedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'archived_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'configuration' => 'configuration',
+                    'category_requirement' => 'categoryRequirement',
+                    'calculator' => 'calculator',
+                    'is_enabled' => 'enabled',
+                    'position' => 'position',
+                    'archived_at' => 'archivedAt',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'configuration' => 'configuration',
+                    'categoryRequirement' => 'category_requirement',
+                    'calculator' => 'calculator',
+                    'enabled' => 'is_enabled',
+                    'position' => 'position',
+                    'archivedAt' => 'archived_at',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_shipping_method',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'category' => [
+                        'fieldName' => 'category',
+                        'targetEntity' => 'App\\Entity\\Shipping\\ShippingCategory',
+                        'joinColumns' => [
+                            [
+                                'name' => 'category_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ShippingMethod',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'category_id' => 'category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'category_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\ShippingMethod',
+                    ],
+                    'zone' => [
+                        'fieldName' => 'zone',
+                        'targetEntity' => 'App\\Entity\\Addressing\\Zone',
+                        'joinColumns' => [
+                            [
+                                'name' => 'zone_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ShippingMethod',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'zone_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'zone_id' => 'zone_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'zone_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'taxCategory' => [
+                        'fieldName' => 'taxCategory',
+                        'targetEntity' => 'App\\Entity\\Taxation\\TaxCategory',
+                        'joinColumns' => [
+                            [
+                                'name' => 'tax_category_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ShippingMethod',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'tax_category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'tax_category_id' => 'tax_category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'tax_category_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

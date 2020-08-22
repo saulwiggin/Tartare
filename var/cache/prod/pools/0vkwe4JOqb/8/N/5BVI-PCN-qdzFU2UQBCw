@@ -1,0 +1,109 @@
+<?php //%255BSylius%255CComponent%255CReview%255CModel%255CReview%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Review\\Model\\Review',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Review\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Review\\Model\\Review',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'title' => [
+                        'fieldName' => 'title',
+                        'type' => 'string',
+                        'columnName' => 'title',
+                        'nullable' => true,
+                    ],
+                    'rating' => [
+                        'fieldName' => 'rating',
+                        'type' => 'integer',
+                        'columnName' => 'rating',
+                    ],
+                    'comment' => [
+                        'fieldName' => 'comment',
+                        'type' => 'text',
+                        'columnName' => 'comment',
+                        'nullable' => true,
+                    ],
+                    'status' => [
+                        'fieldName' => 'status',
+                        'type' => 'string',
+                        'columnName' => 'status',
+                        'length' => 255,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'title' => 'title',
+                    'rating' => 'rating',
+                    'comment' => 'comment',
+                    'status' => 'status',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'title' => 'title',
+                    'rating' => 'rating',
+                    'comment' => 'comment',
+                    'status' => 'status',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_review',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

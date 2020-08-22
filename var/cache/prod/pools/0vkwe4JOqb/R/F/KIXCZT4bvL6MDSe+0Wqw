@@ -1,0 +1,280 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CProductVariant%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\ProductVariant',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\ProductVariant',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'nullable' => false,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'version' => [
+                        'fieldName' => 'version',
+                        'type' => 'integer',
+                        'default' => 1,
+                        'columnName' => 'version',
+                    ],
+                    'onHold' => [
+                        'fieldName' => 'onHold',
+                        'type' => 'integer',
+                        'columnName' => 'on_hold',
+                    ],
+                    'onHand' => [
+                        'fieldName' => 'onHand',
+                        'type' => 'integer',
+                        'columnName' => 'on_hand',
+                    ],
+                    'tracked' => [
+                        'fieldName' => 'tracked',
+                        'type' => 'boolean',
+                        'columnName' => 'tracked',
+                    ],
+                    'width' => [
+                        'fieldName' => 'width',
+                        'type' => 'float',
+                        'columnName' => 'width',
+                        'nullable' => true,
+                    ],
+                    'height' => [
+                        'fieldName' => 'height',
+                        'type' => 'float',
+                        'columnName' => 'height',
+                        'nullable' => true,
+                    ],
+                    'depth' => [
+                        'fieldName' => 'depth',
+                        'type' => 'float',
+                        'columnName' => 'depth',
+                        'nullable' => true,
+                    ],
+                    'weight' => [
+                        'fieldName' => 'weight',
+                        'type' => 'float',
+                        'columnName' => 'weight',
+                        'nullable' => true,
+                    ],
+                    'shippingRequired' => [
+                        'fieldName' => 'shippingRequired',
+                        'type' => 'boolean',
+                        'columnName' => 'shipping_required',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'position' => 'position',
+                    'id' => 'id',
+                    'version' => 'version',
+                    'on_hold' => 'onHold',
+                    'on_hand' => 'onHand',
+                    'tracked' => 'tracked',
+                    'width' => 'width',
+                    'height' => 'height',
+                    'depth' => 'depth',
+                    'weight' => 'weight',
+                    'shipping_required' => 'shippingRequired',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'position' => 'position',
+                    'id' => 'id',
+                    'version' => 'version',
+                    'onHold' => 'on_hold',
+                    'onHand' => 'on_hand',
+                    'tracked' => 'tracked',
+                    'width' => 'width',
+                    'height' => 'height',
+                    'depth' => 'depth',
+                    'weight' => 'weight',
+                    'shippingRequired' => 'shipping_required',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product_variant',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'product' => [
+                        'fieldName' => 'product',
+                        'targetEntity' => 'App\\Entity\\Product\\Product',
+                        'inversedBy' => 'variants',
+                        'joinColumns' => [
+                            [
+                                'name' => 'product_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ProductVariant',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'product_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'product_id' => 'product_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'product_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductVariant',
+                    ],
+                    'taxCategory' => [
+                        'fieldName' => 'taxCategory',
+                        'targetEntity' => 'App\\Entity\\Taxation\\TaxCategory',
+                        'joinColumns' => [
+                            [
+                                'name' => 'tax_category_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ProductVariant',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'tax_category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'tax_category_id' => 'tax_category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'tax_category_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'shippingCategory' => [
+                        'fieldName' => 'shippingCategory',
+                        'targetEntity' => 'App\\Entity\\Shipping\\ShippingCategory',
+                        'joinColumns' => [
+                            [
+                                'name' => 'shipping_category_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ProductVariant',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'shipping_category_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'shipping_category_id' => 'shipping_category_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'shipping_category_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'isVersioned' => [
+                true,
+            ],
+            'versionField' => [
+                'version',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

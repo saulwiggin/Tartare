@@ -1,0 +1,115 @@
+<?php //%255BSylius%255CComponent%255CAddressing%255CModel%255CAddressLogEntry%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Addressing\\Model\\AddressLogEntry',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Addressing\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Addressing\\Model\\AddressLogEntry',
+            ],
+            'customRepositoryClassName' => [
+                'Sylius\\Bundle\\ResourceBundle\\Doctrine\\ORM\\ResourceLogEntryRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'action' => [
+                        'fieldName' => 'action',
+                        'type' => 'string',
+                        'columnName' => 'action',
+                    ],
+                    'loggedAt' => [
+                        'fieldName' => 'loggedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'logged_at',
+                    ],
+                    'objectId' => [
+                        'fieldName' => 'objectId',
+                        'columnName' => 'object_id',
+                        'length' => 64,
+                        'nullable' => true,
+                        'type' => 'string',
+                    ],
+                    'objectClass' => [
+                        'fieldName' => 'objectClass',
+                        'type' => 'string',
+                        'columnName' => 'object_class',
+                    ],
+                    'version' => [
+                        'fieldName' => 'version',
+                        'type' => 'integer',
+                        'columnName' => 'version',
+                    ],
+                    'data' => [
+                        'fieldName' => 'data',
+                        'type' => 'array',
+                        'columnName' => 'data',
+                    ],
+                    'username' => [
+                        'fieldName' => 'username',
+                        'type' => 'string',
+                        'columnName' => 'username',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'action' => 'action',
+                    'logged_at' => 'loggedAt',
+                    'object_id' => 'objectId',
+                    'object_class' => 'objectClass',
+                    'version' => 'version',
+                    'data' => 'data',
+                    'username' => 'username',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'action' => 'action',
+                    'loggedAt' => 'logged_at',
+                    'objectId' => 'object_id',
+                    'objectClass' => 'object_class',
+                    'version' => 'version',
+                    'data' => 'data',
+                    'username' => 'username',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_address_log_entries',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

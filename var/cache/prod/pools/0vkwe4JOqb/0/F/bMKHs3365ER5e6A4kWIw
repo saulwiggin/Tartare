@@ -1,0 +1,105 @@
+<?php //%255BBitBag%255CSyliusCmsPlugin%255CEntity%255CMedia%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\Media',
+            ],
+            'namespace' => [
+                'BitBag\\SyliusCmsPlugin\\Entity',
+            ],
+            'rootEntityName' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\Media',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'length' => 250,
+                        'unique' => true,
+                    ],
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'type',
+                        'length' => 250,
+                    ],
+                    'path' => [
+                        'fieldName' => 'path',
+                        'type' => 'string',
+                        'columnName' => 'path',
+                        'length' => 250,
+                        'unique' => true,
+                    ],
+                    'mimeType' => [
+                        'fieldName' => 'mimeType',
+                        'type' => 'string',
+                        'columnName' => 'mime_type',
+                        'length' => 250,
+                        'nullable' => true,
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'enabled',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'type' => 'type',
+                    'path' => 'path',
+                    'mime_type' => 'mimeType',
+                    'enabled' => 'enabled',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'id' => 'id',
+                    'code' => 'code',
+                    'type' => 'type',
+                    'path' => 'path',
+                    'mimeType' => 'mime_type',
+                    'enabled' => 'enabled',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'bitbag_cms_media',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

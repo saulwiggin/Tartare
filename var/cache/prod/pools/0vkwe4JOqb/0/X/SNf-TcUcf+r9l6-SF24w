@@ -1,0 +1,159 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CPaymentMethod%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\PaymentMethod',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\PaymentMethod',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'environment' => [
+                        'fieldName' => 'environment',
+                        'type' => 'string',
+                        'columnName' => 'environment',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'is_enabled',
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'position' => [
+                        'fieldName' => 'position',
+                        'type' => 'integer',
+                        'columnName' => 'position',
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Payment\\Model\\PaymentMethod',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'environment' => 'environment',
+                    'is_enabled' => 'enabled',
+                    'position' => 'position',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'environment' => 'environment',
+                    'enabled' => 'is_enabled',
+                    'position' => 'position',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_payment_method',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'gatewayConfig' => [
+                        'fieldName' => 'gatewayConfig',
+                        'targetEntity' => 'App\\Entity\\Payment\\GatewayConfig',
+                        'joinColumns' => [
+                            [
+                                'name' => 'gateway_config_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'cascade' => [
+                            'remove',
+                            'persist',
+                            'refresh',
+                            'merge',
+                            'detach',
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\PaymentMethod',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => true,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => true,
+                        'sourceToTargetKeyColumns' => [
+                            'gateway_config_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'gateway_config_id' => 'gateway_config_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'gateway_config_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

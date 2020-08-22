@@ -1,0 +1,159 @@
+<?php //%255BSylius%255CBundle%255CAdminApiBundle%255CModel%255CRefreshToken%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Bundle\\AdminApiBundle\\Model\\RefreshToken',
+            ],
+            'namespace' => [
+                'Sylius\\Bundle\\AdminApiBundle\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Bundle\\AdminApiBundle\\Model\\RefreshToken',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'token' => [
+                        'fieldName' => 'token',
+                        'type' => 'string',
+                        'columnName' => 'token',
+                        'unique' => true,
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\RefreshToken',
+                    ],
+                    'expiresAt' => [
+                        'fieldName' => 'expiresAt',
+                        'type' => 'integer',
+                        'columnName' => 'expires_at',
+                        'nullable' => true,
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\RefreshToken',
+                    ],
+                    'scope' => [
+                        'fieldName' => 'scope',
+                        'type' => 'string',
+                        'columnName' => 'scope',
+                        'nullable' => true,
+                        'declared' => 'FOS\\OAuthServerBundle\\Entity\\RefreshToken',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'token' => 'token',
+                    'expires_at' => 'expiresAt',
+                    'scope' => 'scope',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'token' => 'token',
+                    'expiresAt' => 'expires_at',
+                    'scope' => 'scope',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_admin_api_refresh_token',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'client' => [
+                        'fieldName' => 'client',
+                        'targetEntity' => 'App\\Entity\\AdminApi\\Client',
+                        'joinColumns' => [
+                            [
+                                'name' => 'client_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Bundle\\AdminApiBundle\\Model\\RefreshToken',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'client_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'client_id' => 'client_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'client_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'user' => [
+                        'fieldName' => 'user',
+                        'targetEntity' => 'App\\Entity\\User\\AdminUser',
+                        'joinColumns' => [
+                            [
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Bundle\\AdminApiBundle\\Model\\RefreshToken',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'user_id' => 'user_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'user_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

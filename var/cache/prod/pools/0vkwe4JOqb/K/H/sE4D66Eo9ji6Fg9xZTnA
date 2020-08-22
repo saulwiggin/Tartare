@@ -1,0 +1,108 @@
+<?php //%255BSylius%255CComponent%255COrder%255CModel%255COrderItemUnit%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Order\\Model\\OrderItemUnit',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Order\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Order\\Model\\OrderItemUnit',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'adjustmentsTotal' => [
+                        'fieldName' => 'adjustmentsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'adjustments_total',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'adjustments_total' => 'adjustmentsTotal',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'adjustmentsTotal' => 'adjustments_total',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_order_item_unit',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'orderItem' => [
+                        'fieldName' => 'orderItem',
+                        'targetEntity' => 'App\\Entity\\Order\\OrderItem',
+                        'inversedBy' => 'units',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_item_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Order\\Model\\OrderItemUnit',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_item_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_item_id' => 'order_item_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_item_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

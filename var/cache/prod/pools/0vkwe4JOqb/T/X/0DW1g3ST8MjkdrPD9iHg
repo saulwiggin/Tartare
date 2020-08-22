@@ -1,0 +1,126 @@
+<?php //%255BSylius%255CComponent%255CAttribute%255CModel%255CAttributeValue%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Attribute\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'localeCode' => [
+                        'fieldName' => 'localeCode',
+                        'type' => 'string',
+                        'columnName' => 'locale_code',
+                    ],
+                    'text' => [
+                        'fieldName' => 'text',
+                        'type' => 'text',
+                        'columnName' => 'text_value',
+                        'nullable' => true,
+                    ],
+                    'boolean' => [
+                        'fieldName' => 'boolean',
+                        'type' => 'boolean',
+                        'columnName' => 'boolean_value',
+                        'nullable' => true,
+                    ],
+                    'integer' => [
+                        'fieldName' => 'integer',
+                        'type' => 'integer',
+                        'columnName' => 'integer_value',
+                        'nullable' => true,
+                    ],
+                    'float' => [
+                        'fieldName' => 'float',
+                        'type' => 'float',
+                        'columnName' => 'float_value',
+                        'nullable' => true,
+                    ],
+                    'datetime' => [
+                        'fieldName' => 'datetime',
+                        'type' => 'datetime',
+                        'columnName' => 'datetime_value',
+                        'nullable' => true,
+                    ],
+                    'date' => [
+                        'fieldName' => 'date',
+                        'type' => 'date',
+                        'columnName' => 'date_value',
+                        'nullable' => true,
+                    ],
+                    'json' => [
+                        'fieldName' => 'json',
+                        'type' => 'json_array',
+                        'columnName' => 'json_value',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'locale_code' => 'localeCode',
+                    'text_value' => 'text',
+                    'boolean_value' => 'boolean',
+                    'integer_value' => 'integer',
+                    'float_value' => 'float',
+                    'datetime_value' => 'datetime',
+                    'date_value' => 'date',
+                    'json_value' => 'json',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'localeCode' => 'locale_code',
+                    'text' => 'text_value',
+                    'boolean' => 'boolean_value',
+                    'integer' => 'integer_value',
+                    'float' => 'float_value',
+                    'datetime' => 'datetime_value',
+                    'date' => 'date_value',
+                    'json' => 'json_value',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_attribute_value',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

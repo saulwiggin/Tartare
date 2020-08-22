@@ -1,0 +1,214 @@
+<?php //%255BSylius%255CComponent%255CUser%255CModel%255CUser%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\User\\Model\\User',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\User\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\User\\Model\\User',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'username' => [
+                        'fieldName' => 'username',
+                        'type' => 'string',
+                        'columnName' => 'username',
+                        'nullable' => true,
+                    ],
+                    'usernameCanonical' => [
+                        'fieldName' => 'usernameCanonical',
+                        'type' => 'string',
+                        'columnName' => 'username_canonical',
+                        'nullable' => true,
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'enabled',
+                        'nullable' => false,
+                    ],
+                    'salt' => [
+                        'fieldName' => 'salt',
+                        'type' => 'string',
+                        'columnName' => 'salt',
+                        'nullable' => false,
+                    ],
+                    'password' => [
+                        'fieldName' => 'password',
+                        'type' => 'string',
+                        'columnName' => 'password',
+                        'nullable' => false,
+                    ],
+                    'encoderName' => [
+                        'fieldName' => 'encoderName',
+                        'type' => 'string',
+                        'columnName' => 'encoder_name',
+                        'nullable' => true,
+                    ],
+                    'lastLogin' => [
+                        'fieldName' => 'lastLogin',
+                        'type' => 'datetime',
+                        'columnName' => 'last_login',
+                        'nullable' => true,
+                    ],
+                    'passwordResetToken' => [
+                        'fieldName' => 'passwordResetToken',
+                        'type' => 'string',
+                        'columnName' => 'password_reset_token',
+                        'nullable' => true,
+                    ],
+                    'passwordRequestedAt' => [
+                        'fieldName' => 'passwordRequestedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'password_requested_at',
+                        'nullable' => true,
+                    ],
+                    'emailVerificationToken' => [
+                        'fieldName' => 'emailVerificationToken',
+                        'type' => 'string',
+                        'columnName' => 'email_verification_token',
+                        'nullable' => true,
+                    ],
+                    'verifiedAt' => [
+                        'fieldName' => 'verifiedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'verified_at',
+                        'nullable' => true,
+                    ],
+                    'locked' => [
+                        'fieldName' => 'locked',
+                        'type' => 'boolean',
+                        'columnName' => 'locked',
+                        'nullable' => false,
+                    ],
+                    'expiresAt' => [
+                        'fieldName' => 'expiresAt',
+                        'type' => 'datetime',
+                        'columnName' => 'expires_at',
+                        'nullable' => true,
+                    ],
+                    'credentialsExpireAt' => [
+                        'fieldName' => 'credentialsExpireAt',
+                        'type' => 'datetime',
+                        'columnName' => 'credentials_expire_at',
+                        'nullable' => true,
+                    ],
+                    'roles' => [
+                        'fieldName' => 'roles',
+                        'type' => 'array',
+                        'columnName' => 'roles',
+                        'nullable' => false,
+                    ],
+                    'email' => [
+                        'fieldName' => 'email',
+                        'type' => 'string',
+                        'columnName' => 'email',
+                        'nullable' => true,
+                    ],
+                    'emailCanonical' => [
+                        'fieldName' => 'emailCanonical',
+                        'type' => 'string',
+                        'columnName' => 'email_canonical',
+                        'nullable' => true,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'username' => 'username',
+                    'username_canonical' => 'usernameCanonical',
+                    'enabled' => 'enabled',
+                    'salt' => 'salt',
+                    'password' => 'password',
+                    'encoder_name' => 'encoderName',
+                    'last_login' => 'lastLogin',
+                    'password_reset_token' => 'passwordResetToken',
+                    'password_requested_at' => 'passwordRequestedAt',
+                    'email_verification_token' => 'emailVerificationToken',
+                    'verified_at' => 'verifiedAt',
+                    'locked' => 'locked',
+                    'expires_at' => 'expiresAt',
+                    'credentials_expire_at' => 'credentialsExpireAt',
+                    'roles' => 'roles',
+                    'email' => 'email',
+                    'email_canonical' => 'emailCanonical',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'username' => 'username',
+                    'usernameCanonical' => 'username_canonical',
+                    'enabled' => 'enabled',
+                    'salt' => 'salt',
+                    'password' => 'password',
+                    'encoderName' => 'encoder_name',
+                    'lastLogin' => 'last_login',
+                    'passwordResetToken' => 'password_reset_token',
+                    'passwordRequestedAt' => 'password_requested_at',
+                    'emailVerificationToken' => 'email_verification_token',
+                    'verifiedAt' => 'verified_at',
+                    'locked' => 'locked',
+                    'expiresAt' => 'expires_at',
+                    'credentialsExpireAt' => 'credentials_expire_at',
+                    'roles' => 'roles',
+                    'email' => 'email',
+                    'emailCanonical' => 'email_canonical',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_user',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

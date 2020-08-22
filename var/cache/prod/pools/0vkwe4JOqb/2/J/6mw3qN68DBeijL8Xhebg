@@ -1,0 +1,154 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CProduct%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\Product',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\Product',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'columnName' => 'code',
+                        'unique' => true,
+                        'nullable' => false,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\Product',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\Product',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Product\\Model\\Product',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'enabled',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\Product',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\Product',
+                    ],
+                    'variantSelectionMethod' => [
+                        'fieldName' => 'variantSelectionMethod',
+                        'type' => 'string',
+                        'columnName' => 'variant_selection_method',
+                        'nullable' => false,
+                    ],
+                    'averageRating' => [
+                        'fieldName' => 'averageRating',
+                        'type' => 'float',
+                        'columnName' => 'average_rating',
+                        'options' => [
+                            'default' => '0',
+                        ],
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'enabled' => 'enabled',
+                    'id' => 'id',
+                    'variant_selection_method' => 'variantSelectionMethod',
+                    'average_rating' => 'averageRating',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'enabled' => 'enabled',
+                    'id' => 'id',
+                    'variantSelectionMethod' => 'variant_selection_method',
+                    'averageRating' => 'average_rating',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'mainTaxon' => [
+                        'fieldName' => 'mainTaxon',
+                        'targetEntity' => 'App\\Entity\\Taxonomy\\Taxon',
+                        'joinColumns' => [
+                            [
+                                'name' => 'main_taxon_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Product',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'main_taxon_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'main_taxon_id' => 'main_taxon_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'main_taxon_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

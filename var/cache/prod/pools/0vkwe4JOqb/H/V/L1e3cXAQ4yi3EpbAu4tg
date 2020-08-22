@@ -1,0 +1,131 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CChannelPricing%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\ChannelPricing',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\ChannelPricing',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'price' => [
+                        'fieldName' => 'price',
+                        'type' => 'integer',
+                        'columnName' => 'price',
+                    ],
+                    'originalPrice' => [
+                        'fieldName' => 'originalPrice',
+                        'type' => 'integer',
+                        'columnName' => 'original_price',
+                        'nullable' => true,
+                    ],
+                    'channelCode' => [
+                        'fieldName' => 'channelCode',
+                        'type' => 'string',
+                        'columnName' => 'channel_code',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'price' => 'price',
+                    'original_price' => 'originalPrice',
+                    'channel_code' => 'channelCode',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'price' => 'price',
+                    'originalPrice' => 'original_price',
+                    'channelCode' => 'channel_code',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_channel_pricing',
+                    'uniqueConstraints' => [
+                        'product_variant_channel_idx' => [
+                            'columns' => [
+                                'product_variant_id',
+                                'channel_code',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'productVariant' => [
+                        'fieldName' => 'productVariant',
+                        'targetEntity' => 'App\\Entity\\Product\\ProductVariant',
+                        'inversedBy' => 'channelPricings',
+                        'joinColumns' => [
+                            [
+                                'name' => 'product_variant_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\ChannelPricing',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'product_variant_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'product_variant_id' => 'product_variant_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'product_variant_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,228 @@
+<?php //%255BSylius%255CComponent%255COrder%255CModel%255CAdjustment%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Order\\Model\\Adjustment',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Order\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Order\\Model\\Adjustment',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'type',
+                    ],
+                    'label' => [
+                        'fieldName' => 'label',
+                        'type' => 'string',
+                        'columnName' => 'label',
+                        'nullable' => true,
+                    ],
+                    'amount' => [
+                        'fieldName' => 'amount',
+                        'type' => 'integer',
+                        'columnName' => 'amount',
+                    ],
+                    'neutral' => [
+                        'fieldName' => 'neutral',
+                        'type' => 'boolean',
+                        'columnName' => 'is_neutral',
+                    ],
+                    'locked' => [
+                        'fieldName' => 'locked',
+                        'type' => 'boolean',
+                        'columnName' => 'is_locked',
+                    ],
+                    'originCode' => [
+                        'fieldName' => 'originCode',
+                        'type' => 'string',
+                        'columnName' => 'origin_code',
+                        'nullable' => true,
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'type' => 'type',
+                    'label' => 'label',
+                    'amount' => 'amount',
+                    'is_neutral' => 'neutral',
+                    'is_locked' => 'locked',
+                    'origin_code' => 'originCode',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'type' => 'type',
+                    'label' => 'label',
+                    'amount' => 'amount',
+                    'neutral' => 'is_neutral',
+                    'locked' => 'is_locked',
+                    'originCode' => 'origin_code',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_adjustment',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'order' => [
+                        'fieldName' => 'order',
+                        'targetEntity' => 'App\\Entity\\Order\\Order',
+                        'inversedBy' => 'adjustments',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Order\\Model\\Adjustment',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_id' => 'order_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'orderItem' => [
+                        'fieldName' => 'orderItem',
+                        'targetEntity' => 'App\\Entity\\Order\\OrderItem',
+                        'inversedBy' => 'adjustments',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_item_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Order\\Model\\Adjustment',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_item_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_item_id' => 'order_item_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_item_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'orderItemUnit' => [
+                        'fieldName' => 'orderItemUnit',
+                        'targetEntity' => 'App\\Entity\\Order\\OrderItemUnit',
+                        'inversedBy' => 'adjustments',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_item_unit_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Order\\Model\\Adjustment',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_item_unit_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_item_unit_id' => 'order_item_unit_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_item_unit_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

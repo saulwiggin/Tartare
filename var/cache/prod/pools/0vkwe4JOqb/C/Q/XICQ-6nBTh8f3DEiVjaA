@@ -1,0 +1,92 @@
+<?php //%255B82836ea997ed01509673acfc80d8158a%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.type AS type_1, s1_.configuration AS configuration_2, s1_.id AS id_3, s1_.promotion_id AS promotion_id_4 FROM sylius_promotion s0_ LEFT JOIN sylius_promotion_rule s1_ ON s0_.id = s1_.promotion_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Promotion\\Promotion',
+                    'associations' => 'App\\Entity\\Promotion\\PromotionRule',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'rules',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'type_1' => 'type',
+                    'configuration_2' => 'configuration',
+                    'id_3' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'promotion_id_4' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'promotion_id_4' => 'promotion_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'type_1' => 'associations',
+                    'configuration_2' => 'associations',
+                    'id_3' => 'associations',
+                    'promotion_id_4' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Promotion\\Promotion',
+                    'type_1' => 'App\\Entity\\Promotion\\PromotionRule',
+                    'configuration_2' => 'App\\Entity\\Promotion\\PromotionRule',
+                    'id_3' => 'App\\Entity\\Promotion\\PromotionRule',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

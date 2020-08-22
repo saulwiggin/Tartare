@@ -1,0 +1,195 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CCustomer%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\Customer',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\Customer',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'email' => [
+                        'fieldName' => 'email',
+                        'type' => 'string',
+                        'columnName' => 'email',
+                        'unique' => true,
+                        'nullable' => false,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'emailCanonical' => [
+                        'fieldName' => 'emailCanonical',
+                        'type' => 'string',
+                        'columnName' => 'email_canonical',
+                        'unique' => true,
+                        'nullable' => false,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'columnName' => 'first_name',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'columnName' => 'last_name',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'birthday' => [
+                        'fieldName' => 'birthday',
+                        'type' => 'datetime',
+                        'columnName' => 'birthday',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'gender' => [
+                        'fieldName' => 'gender',
+                        'type' => 'string',
+                        'columnName' => 'gender',
+                        'length' => 1,
+                        'options' => [
+                            'default' => 'u',
+                        ],
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'phoneNumber' => [
+                        'fieldName' => 'phoneNumber',
+                        'type' => 'string',
+                        'columnName' => 'phone_number',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'subscribedToNewsletter' => [
+                        'fieldName' => 'subscribedToNewsletter',
+                        'type' => 'boolean',
+                        'columnName' => 'subscribed_to_newsletter',
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'email' => 'email',
+                    'email_canonical' => 'emailCanonical',
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                    'birthday' => 'birthday',
+                    'gender' => 'gender',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'phone_number' => 'phoneNumber',
+                    'subscribed_to_newsletter' => 'subscribedToNewsletter',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'email' => 'email',
+                    'emailCanonical' => 'email_canonical',
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                    'birthday' => 'birthday',
+                    'gender' => 'gender',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'phoneNumber' => 'phone_number',
+                    'subscribedToNewsletter' => 'subscribed_to_newsletter',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_customer',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'group' => [
+                        'fieldName' => 'group',
+                        'targetEntity' => 'App\\Entity\\Customer\\CustomerGroup',
+                        'joinColumns' => [
+                            [
+                                'name' => 'customer_group_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Customer',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'customer_group_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'customer_group_id' => 'customer_group_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'customer_group_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Customer\\Model\\Customer',
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

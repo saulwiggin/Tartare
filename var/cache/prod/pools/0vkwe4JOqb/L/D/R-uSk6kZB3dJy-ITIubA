@@ -1,0 +1,105 @@
+<?php //%255B4a47772aedec922afbed080b751ecb54%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'channel' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.code AS code_0, s0_.configuration AS configuration_1, s0_.category_requirement AS category_requirement_2, s0_.calculator AS calculator_3, s0_.is_enabled AS is_enabled_4, s0_.position AS position_5, s0_.archived_at AS archived_at_6, s0_.created_at AS created_at_7, s0_.updated_at AS updated_at_8, s0_.id AS id_9, s0_.category_id AS category_id_10, s0_.zone_id AS zone_id_11, s0_.tax_category_id AS tax_category_id_12 FROM sylius_shipping_method s0_ WHERE s0_.is_enabled = 1 AND s0_.archived_at IS NULL AND EXISTS (SELECT 1 FROM sylius_shipping_method_channels s1_ INNER JOIN sylius_channel s2_ ON s1_.channel_id = s2_.id WHERE s1_.shipping_method_id = s0_.id AND s2_.id IN (?))',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Shipping\\ShippingMethod',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'code_0' => 'code',
+                    'configuration_1' => 'configuration',
+                    'category_requirement_2' => 'categoryRequirement',
+                    'calculator_3' => 'calculator',
+                    'is_enabled_4' => 'enabled',
+                    'position_5' => 'position',
+                    'archived_at_6' => 'archivedAt',
+                    'created_at_7' => 'createdAt',
+                    'updated_at_8' => 'updatedAt',
+                    'id_9' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'category_id_10' => 'integer',
+                    'zone_id_11' => 'integer',
+                    'tax_category_id_12' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'category_id_10' => 'category_id',
+                    'zone_id_11' => 'zone_id',
+                    'tax_category_id_12' => 'tax_category_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'code_0' => 'o',
+                    'configuration_1' => 'o',
+                    'category_requirement_2' => 'o',
+                    'calculator_3' => 'o',
+                    'is_enabled_4' => 'o',
+                    'position_5' => 'o',
+                    'archived_at_6' => 'o',
+                    'created_at_7' => 'o',
+                    'updated_at_8' => 'o',
+                    'id_9' => 'o',
+                    'category_id_10' => 'o',
+                    'zone_id_11' => 'o',
+                    'tax_category_id_12' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'code_0' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'configuration_1' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'category_requirement_2' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'calculator_3' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'is_enabled_4' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'position_5' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'archived_at_6' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'created_at_7' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'updated_at_8' => 'App\\Entity\\Shipping\\ShippingMethod',
+                    'id_9' => 'App\\Entity\\Shipping\\ShippingMethod',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

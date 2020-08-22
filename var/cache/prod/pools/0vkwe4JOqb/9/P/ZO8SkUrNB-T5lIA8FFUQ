@@ -1,0 +1,207 @@
+<?php //%255BApp%255CEntity%255CProduct%255CProductAttributeValue%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Product\\ProductAttributeValue',
+            ],
+            'namespace' => [
+                'App\\Entity\\Product',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Product\\ProductAttributeValue',
+            ],
+            'customRepositoryClassName' => [
+                'Sylius\\Bundle\\ProductBundle\\Doctrine\\ORM\\ProductAttributeValueRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'localeCode' => [
+                        'fieldName' => 'localeCode',
+                        'type' => 'string',
+                        'columnName' => 'locale_code',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'text' => [
+                        'fieldName' => 'text',
+                        'type' => 'text',
+                        'columnName' => 'text_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'boolean' => [
+                        'fieldName' => 'boolean',
+                        'type' => 'boolean',
+                        'columnName' => 'boolean_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'integer' => [
+                        'fieldName' => 'integer',
+                        'type' => 'integer',
+                        'columnName' => 'integer_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'float' => [
+                        'fieldName' => 'float',
+                        'type' => 'float',
+                        'columnName' => 'float_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'datetime' => [
+                        'fieldName' => 'datetime',
+                        'type' => 'datetime',
+                        'columnName' => 'datetime_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'date' => [
+                        'fieldName' => 'date',
+                        'type' => 'date',
+                        'columnName' => 'date_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'json' => [
+                        'fieldName' => 'json',
+                        'type' => 'json_array',
+                        'columnName' => 'json_value',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Attribute\\Model\\AttributeValue',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'locale_code' => 'localeCode',
+                    'text_value' => 'text',
+                    'boolean_value' => 'boolean',
+                    'integer_value' => 'integer',
+                    'float_value' => 'float',
+                    'datetime_value' => 'datetime',
+                    'date_value' => 'date',
+                    'json_value' => 'json',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'localeCode' => 'locale_code',
+                    'text' => 'text_value',
+                    'boolean' => 'boolean_value',
+                    'integer' => 'integer_value',
+                    'float' => 'float_value',
+                    'datetime' => 'datetime_value',
+                    'date' => 'date_value',
+                    'json' => 'json_value',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product_attribute_value',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'subject' => [
+                        'fieldName' => 'subject',
+                        'targetEntity' => 'App\\Entity\\Product\\Product',
+                        'inversedBy' => 'attributes',
+                        'joinColumns' => [
+                            [
+                                'name' => 'product_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Product\\ProductAttributeValue',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'product_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'product_id' => 'product_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'product_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'attribute' => [
+                        'fieldName' => 'attribute',
+                        'targetEntity' => 'App\\Entity\\Product\\ProductAttribute',
+                        'joinColumns' => [
+                            [
+                                'name' => 'attribute_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Product\\ProductAttributeValue',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'attribute_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'attribute_id' => 'attribute_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'attribute_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

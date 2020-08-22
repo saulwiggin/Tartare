@@ -1,0 +1,200 @@
+<?php //%255BApp%255CEntity%255CShipping%255CShipment%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Shipping\\Shipment',
+            ],
+            'namespace' => [
+                'App\\Entity\\Shipping',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Shipping\\Shipment',
+            ],
+            'customRepositoryClassName' => [
+                'Sylius\\Bundle\\CoreBundle\\Doctrine\\ORM\\ShipmentRepository',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'state' => [
+                        'fieldName' => 'state',
+                        'type' => 'string',
+                        'columnName' => 'state',
+                        'nullable' => false,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'tracking' => [
+                        'fieldName' => 'tracking',
+                        'type' => 'string',
+                        'columnName' => 'tracking',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'shippedAt' => [
+                        'fieldName' => 'shippedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'shipped_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'state' => 'state',
+                    'tracking' => 'tracking',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'shipped_at' => 'shippedAt',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'state' => 'state',
+                    'tracking' => 'tracking',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'shippedAt' => 'shipped_at',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_shipment',
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'method' => [
+                        'fieldName' => 'method',
+                        'targetEntity' => 'App\\Entity\\Shipping\\ShippingMethod',
+                        'joinColumns' => [
+                            [
+                                'name' => 'method_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Shipping\\Shipment',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'method_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'method_id' => 'method_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'method_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Shipping\\Model\\Shipment',
+                    ],
+                    'order' => [
+                        'fieldName' => 'order',
+                        'targetEntity' => 'App\\Entity\\Order\\Order',
+                        'inversedBy' => 'shipments',
+                        'joinColumns' => [
+                            [
+                                'name' => 'order_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                                'onDelete' => 'CASCADE',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Shipping\\Shipment',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'order_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'order_id' => 'order_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'order_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Shipment',
+                    ],
+                    'units' => [
+                        'fieldName' => 'units',
+                        'targetEntity' => 'App\\Entity\\Order\\OrderItemUnit',
+                        'mappedBy' => 'shipment',
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'orphanRemoval' => false,
+                        'type' => 4,
+                        'inversedBy' => null,
+                        'isOwningSide' => false,
+                        'sourceEntity' => 'App\\Entity\\Shipping\\Shipment',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

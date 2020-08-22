@@ -1,0 +1,307 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255COrder%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\Order',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\Order',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'number' => [
+                        'fieldName' => 'number',
+                        'type' => 'string',
+                        'columnName' => 'number',
+                        'unique' => true,
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'notes' => [
+                        'fieldName' => 'notes',
+                        'type' => 'text',
+                        'columnName' => 'notes',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'state' => [
+                        'fieldName' => 'state',
+                        'type' => 'string',
+                        'columnName' => 'state',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'checkoutCompletedAt' => [
+                        'fieldName' => 'checkoutCompletedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'checkout_completed_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'itemsTotal' => [
+                        'fieldName' => 'itemsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'items_total',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'adjustmentsTotal' => [
+                        'fieldName' => 'adjustmentsTotal',
+                        'type' => 'integer',
+                        'columnName' => 'adjustments_total',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'total' => [
+                        'fieldName' => 'total',
+                        'type' => 'integer',
+                        'columnName' => 'total',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\Order',
+                    ],
+                    'currencyCode' => [
+                        'fieldName' => 'currencyCode',
+                        'columnName' => 'currency_code',
+                        'length' => 3,
+                        'type' => 'string',
+                    ],
+                    'localeCode' => [
+                        'fieldName' => 'localeCode',
+                        'type' => 'string',
+                        'columnName' => 'locale_code',
+                    ],
+                    'checkoutState' => [
+                        'fieldName' => 'checkoutState',
+                        'type' => 'string',
+                        'columnName' => 'checkout_state',
+                    ],
+                    'paymentState' => [
+                        'fieldName' => 'paymentState',
+                        'type' => 'string',
+                        'columnName' => 'payment_state',
+                    ],
+                    'shippingState' => [
+                        'fieldName' => 'shippingState',
+                        'type' => 'string',
+                        'columnName' => 'shipping_state',
+                    ],
+                    'tokenValue' => [
+                        'fieldName' => 'tokenValue',
+                        'type' => 'string',
+                        'columnName' => 'token_value',
+                        'nullable' => true,
+                    ],
+                    'customerIp' => [
+                        'fieldName' => 'customerIp',
+                        'type' => 'string',
+                        'columnName' => 'customer_ip',
+                        'nullable' => true,
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'number' => 'number',
+                    'notes' => 'notes',
+                    'state' => 'state',
+                    'checkout_completed_at' => 'checkoutCompletedAt',
+                    'items_total' => 'itemsTotal',
+                    'adjustments_total' => 'adjustmentsTotal',
+                    'total' => 'total',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                    'currency_code' => 'currencyCode',
+                    'locale_code' => 'localeCode',
+                    'checkout_state' => 'checkoutState',
+                    'payment_state' => 'paymentState',
+                    'shipping_state' => 'shippingState',
+                    'token_value' => 'tokenValue',
+                    'customer_ip' => 'customerIp',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'number' => 'number',
+                    'notes' => 'notes',
+                    'state' => 'state',
+                    'checkoutCompletedAt' => 'checkout_completed_at',
+                    'itemsTotal' => 'items_total',
+                    'adjustmentsTotal' => 'adjustments_total',
+                    'total' => 'total',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                    'currencyCode' => 'currency_code',
+                    'localeCode' => 'locale_code',
+                    'checkoutState' => 'checkout_state',
+                    'paymentState' => 'payment_state',
+                    'shippingState' => 'shipping_state',
+                    'tokenValue' => 'token_value',
+                    'customerIp' => 'customer_ip',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_order',
+                    'indexes' => [
+                        [
+                            'columns' => [
+                                'state',
+                                'updated_at',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'channel' => [
+                        'fieldName' => 'channel',
+                        'targetEntity' => 'App\\Entity\\Channel\\Channel',
+                        'joinColumns' => [
+                            [
+                                'name' => 'channel_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Order',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'channel_id' => 'channel_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'channel_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'promotionCoupon' => [
+                        'fieldName' => 'promotionCoupon',
+                        'targetEntity' => 'App\\Entity\\Promotion\\PromotionCoupon',
+                        'joinColumns' => [
+                            [
+                                'name' => 'promotion_coupon_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Order',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'promotion_coupon_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'promotion_coupon_id' => 'promotion_coupon_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'promotion_coupon_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'customer' => [
+                        'fieldName' => 'customer',
+                        'targetEntity' => 'App\\Entity\\Customer\\Customer',
+                        'inversedBy' => 'orders',
+                        'joinColumns' => [
+                            [
+                                'name' => 'customer_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                            ],
+                        ],
+                        'cascade' => [
+                            'persist',
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Order',
+                        'fetch' => 2,
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'customer_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'customer_id' => 'customer_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'customer_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

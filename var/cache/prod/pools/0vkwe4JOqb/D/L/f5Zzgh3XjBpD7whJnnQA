@@ -1,0 +1,84 @@
+<?php //%255BApp%255CEntity%255COrder%255COrderSequence%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Order\\OrderSequence',
+            ],
+            'namespace' => [
+                'App\\Entity\\Order',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Order\\OrderSequence',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'index' => [
+                        'fieldName' => 'index',
+                        'type' => 'integer',
+                        'columnName' => 'idx',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\OrderSequence',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Order\\Model\\OrderSequence',
+                    ],
+                    'version' => [
+                        'fieldName' => 'version',
+                        'type' => 'integer',
+                        'default' => 1,
+                        'columnName' => 'version',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\OrderSequence',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'idx' => 'index',
+                    'id' => 'id',
+                    'version' => 'version',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'index' => 'idx',
+                    'id' => 'id',
+                    'version' => 'version',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_order_sequence',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+            'isVersioned' => [
+                true,
+            ],
+            'versionField' => [
+                'version',
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

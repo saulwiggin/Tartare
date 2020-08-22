@@ -1,0 +1,123 @@
+<?php //%255BApp%255CEntity%255CProduct%255CProductOptionValueTranslation%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Product\\ProductOptionValueTranslation',
+            ],
+            'namespace' => [
+                'App\\Entity\\Product',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Product\\ProductOptionValueTranslation',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'value' => [
+                        'fieldName' => 'value',
+                        'type' => 'string',
+                        'columnName' => 'value',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOptionValueTranslation',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Product\\Model\\ProductOptionValueTranslation',
+                    ],
+                    'locale' => [
+                        'fieldName' => 'locale',
+                        'type' => 'string',
+                        'nullable' => false,
+                        'columnName' => 'locale',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'value' => 'value',
+                    'id' => 'id',
+                    'locale' => 'locale',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'value' => 'value',
+                    'id' => 'id',
+                    'locale' => 'locale',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_product_option_value_translation',
+                    'uniqueConstraints' => [
+                        'sylius_product_option_value_translation_uniq_trans' => [
+                            'columns' => [
+                                'translatable_id',
+                                'locale',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'translatable' => [
+                        'fieldName' => 'translatable',
+                        'targetEntity' => 'App\\Entity\\Product\\ProductOptionValue',
+                        'inversedBy' => 'translations',
+                        'joinColumns' => [
+                            [
+                                'name' => 'translatable_id',
+                                'referencedColumnName' => 'id',
+                                'onDelete' => 'CASCADE',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Product\\ProductOptionValueTranslation',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'translatable_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'translatable_id' => 'translatable_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'translatable_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

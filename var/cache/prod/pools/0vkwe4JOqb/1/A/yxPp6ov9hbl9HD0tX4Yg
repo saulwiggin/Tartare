@@ -1,0 +1,84 @@
+<?php //%255BSylius%255CComponent%255CReview%255CModel%255CReviewer%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Review\\Model\\Reviewer',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Review\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Review\\Model\\Reviewer',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'email' => [
+                        'fieldName' => 'email',
+                        'type' => 'string',
+                        'columnName' => 'email',
+                    ],
+                    'firstName' => [
+                        'fieldName' => 'firstName',
+                        'type' => 'string',
+                        'columnName' => 'first_name',
+                    ],
+                    'lastName' => [
+                        'fieldName' => 'lastName',
+                        'type' => 'string',
+                        'columnName' => 'last_name',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'email' => 'email',
+                    'first_name' => 'firstName',
+                    'last_name' => 'lastName',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'email' => 'email',
+                    'firstName' => 'first_name',
+                    'lastName' => 'last_name',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_reviewer',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

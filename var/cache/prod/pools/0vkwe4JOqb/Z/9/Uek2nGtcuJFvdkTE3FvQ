@@ -1,0 +1,81 @@
+<?php //%255BBitBag%255CSyliusCmsPlugin%255CEntity%255CPageImage%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\PageImage',
+            ],
+            'namespace' => [
+                'BitBag\\SyliusCmsPlugin\\Entity',
+            ],
+            'rootEntityName' => [
+                'BitBag\\SyliusCmsPlugin\\Entity\\PageImage',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'type' => [
+                        'fieldName' => 'type',
+                        'type' => 'string',
+                        'columnName' => 'type',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Image',
+                    ],
+                    'path' => [
+                        'fieldName' => 'path',
+                        'type' => 'string',
+                        'columnName' => 'path',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Image',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Image',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'type' => 'type',
+                    'path' => 'path',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'type' => 'type',
+                    'path' => 'path',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'bitbag_cms_page_image',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

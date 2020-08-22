@@ -1,0 +1,137 @@
+<?php //%255BSylius%255CComponent%255CUser%255CModel%255CUserOAuth%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\User\\Model\\UserOAuth',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\User\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\User\\Model\\UserOAuth',
+            ],
+            'isMappedSuperclass' => [
+                true,
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'provider' => [
+                        'fieldName' => 'provider',
+                        'type' => 'string',
+                        'columnName' => 'provider',
+                    ],
+                    'identifier' => [
+                        'fieldName' => 'identifier',
+                        'type' => 'string',
+                        'columnName' => 'identifier',
+                    ],
+                    'accessToken' => [
+                        'fieldName' => 'accessToken',
+                        'type' => 'string',
+                        'columnName' => 'access_token',
+                        'nullable' => true,
+                    ],
+                    'refreshToken' => [
+                        'fieldName' => 'refreshToken',
+                        'type' => 'string',
+                        'columnName' => 'refresh_token',
+                        'nullable' => true,
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'provider' => 'provider',
+                    'identifier' => 'identifier',
+                    'access_token' => 'accessToken',
+                    'refresh_token' => 'refreshToken',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'provider' => 'provider',
+                    'identifier' => 'identifier',
+                    'accessToken' => 'access_token',
+                    'refreshToken' => 'refresh_token',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_user_oauth',
+                    'uniqueConstraints' => [
+                        'user_provider' => [
+                            'columns' => [
+                                'user_id',
+                                'provider',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'user' => [
+                        'fieldName' => 'user',
+                        'targetEntity' => 'App\\Entity\\User\\ShopUser',
+                        'inversedBy' => 'oauthAccounts',
+                        'joinColumns' => [
+                            [
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'id',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\User\\Model\\UserOAuth',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'user_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'user_id' => 'user_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'user_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

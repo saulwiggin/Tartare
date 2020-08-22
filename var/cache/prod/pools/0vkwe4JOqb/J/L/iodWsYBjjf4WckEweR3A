@@ -1,0 +1,90 @@
+<?php //%255Ba1273101e0155cbed0cf0fa6e0e4633b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'channel' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.code AS code_0, s0_.environment AS environment_1, s0_.is_enabled AS is_enabled_2, s0_.position AS position_3, s0_.created_at AS created_at_4, s0_.updated_at AS updated_at_5, s0_.id AS id_6, s0_.gateway_config_id AS gateway_config_id_7 FROM sylius_payment_method s0_ WHERE s0_.is_enabled = 1 AND EXISTS (SELECT 1 FROM sylius_payment_method_channels s1_ INNER JOIN sylius_channel s2_ ON s1_.channel_id = s2_.id WHERE s1_.payment_method_id = s0_.id AND s2_.id IN (?)) ORDER BY s0_.position ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Payment\\PaymentMethod',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'code_0' => 'code',
+                    'environment_1' => 'environment',
+                    'is_enabled_2' => 'enabled',
+                    'position_3' => 'position',
+                    'created_at_4' => 'createdAt',
+                    'updated_at_5' => 'updatedAt',
+                    'id_6' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'gateway_config_id_7' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'gateway_config_id_7' => 'gateway_config_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'code_0' => 'o',
+                    'environment_1' => 'o',
+                    'is_enabled_2' => 'o',
+                    'position_3' => 'o',
+                    'created_at_4' => 'o',
+                    'updated_at_5' => 'o',
+                    'id_6' => 'o',
+                    'gateway_config_id_7' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'code_0' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'environment_1' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'is_enabled_2' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'position_3' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'created_at_4' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'updated_at_5' => 'App\\Entity\\Payment\\PaymentMethod',
+                    'id_6' => 'App\\Entity\\Payment\\PaymentMethod',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
