@@ -1,0 +1,510 @@
+<?php //%255BApp%255CEntity%255CChannel%255CChannel%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'App\\Entity\\Channel\\Channel',
+            ],
+            'namespace' => [
+                'App\\Entity\\Channel',
+            ],
+            'rootEntityName' => [
+                'App\\Entity\\Channel\\Channel',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'code' => [
+                        'fieldName' => 'code',
+                        'type' => 'string',
+                        'unique' => true,
+                        'columnName' => 'code',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'name' => [
+                        'fieldName' => 'name',
+                        'type' => 'string',
+                        'columnName' => 'name',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'color' => [
+                        'fieldName' => 'color',
+                        'type' => 'string',
+                        'nullable' => true,
+                        'columnName' => 'color',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'description' => [
+                        'fieldName' => 'description',
+                        'type' => 'text',
+                        'nullable' => true,
+                        'columnName' => 'description',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'enabled' => [
+                        'fieldName' => 'enabled',
+                        'type' => 'boolean',
+                        'columnName' => 'enabled',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'hostname' => [
+                        'fieldName' => 'hostname',
+                        'type' => 'string',
+                        'nullable' => true,
+                        'columnName' => 'hostname',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'createdAt' => [
+                        'fieldName' => 'createdAt',
+                        'type' => 'datetime',
+                        'columnName' => 'created_at',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'updatedAt' => [
+                        'fieldName' => 'updatedAt',
+                        'type' => 'datetime',
+                        'columnName' => 'updated_at',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                        'declared' => 'Sylius\\Component\\Channel\\Model\\Channel',
+                    ],
+                    'themeName' => [
+                        'fieldName' => 'themeName',
+                        'type' => 'string',
+                        'columnName' => 'theme_name',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'taxCalculationStrategy' => [
+                        'fieldName' => 'taxCalculationStrategy',
+                        'type' => 'string',
+                        'columnName' => 'tax_calculation_strategy',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'contactEmail' => [
+                        'fieldName' => 'contactEmail',
+                        'type' => 'string',
+                        'columnName' => 'contact_email',
+                        'nullable' => true,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'skippingShippingStepAllowed' => [
+                        'fieldName' => 'skippingShippingStepAllowed',
+                        'type' => 'boolean',
+                        'columnName' => 'skipping_shipping_step_allowed',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'skippingPaymentStepAllowed' => [
+                        'fieldName' => 'skippingPaymentStepAllowed',
+                        'type' => 'boolean',
+                        'columnName' => 'skipping_payment_step_allowed',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'accountVerificationRequired' => [
+                        'fieldName' => 'accountVerificationRequired',
+                        'type' => 'boolean',
+                        'columnName' => 'account_verification_required',
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'code' => 'code',
+                    'name' => 'name',
+                    'color' => 'color',
+                    'description' => 'description',
+                    'enabled' => 'enabled',
+                    'hostname' => 'hostname',
+                    'created_at' => 'createdAt',
+                    'updated_at' => 'updatedAt',
+                    'id' => 'id',
+                    'theme_name' => 'themeName',
+                    'tax_calculation_strategy' => 'taxCalculationStrategy',
+                    'contact_email' => 'contactEmail',
+                    'skipping_shipping_step_allowed' => 'skippingShippingStepAllowed',
+                    'skipping_payment_step_allowed' => 'skippingPaymentStepAllowed',
+                    'account_verification_required' => 'accountVerificationRequired',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'code' => 'code',
+                    'name' => 'name',
+                    'color' => 'color',
+                    'description' => 'description',
+                    'enabled' => 'enabled',
+                    'hostname' => 'hostname',
+                    'createdAt' => 'created_at',
+                    'updatedAt' => 'updated_at',
+                    'id' => 'id',
+                    'themeName' => 'theme_name',
+                    'taxCalculationStrategy' => 'tax_calculation_strategy',
+                    'contactEmail' => 'contact_email',
+                    'skippingShippingStepAllowed' => 'skipping_shipping_step_allowed',
+                    'skippingPaymentStepAllowed' => 'skipping_payment_step_allowed',
+                    'accountVerificationRequired' => 'account_verification_required',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_channel',
+                    'indexes' => [
+                        [
+                            'columns' => [
+                                'hostname',
+                            ],
+                        ],
+                    ],
+                ],
+            ],
+            'associationMappings' => [
+                [
+                    'defaultLocale' => [
+                        'fieldName' => 'defaultLocale',
+                        'targetEntity' => 'App\\Entity\\Locale\\Locale',
+                        'fetch' => 3,
+                        'joinColumns' => [
+                            [
+                                'name' => 'default_locale_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'default_locale_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'default_locale_id' => 'default_locale_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'default_locale_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'baseCurrency' => [
+                        'fieldName' => 'baseCurrency',
+                        'targetEntity' => 'App\\Entity\\Currency\\Currency',
+                        'fetch' => 3,
+                        'joinColumns' => [
+                            [
+                                'name' => 'base_currency_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => false,
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'base_currency_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'base_currency_id' => 'base_currency_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'base_currency_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'defaultTaxZone' => [
+                        'fieldName' => 'defaultTaxZone',
+                        'targetEntity' => 'App\\Entity\\Addressing\\Zone',
+                        'joinColumns' => [
+                            [
+                                'name' => 'default_tax_zone_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'default_tax_zone_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'default_tax_zone_id' => 'default_tax_zone_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'default_tax_zone_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'menuTaxon' => [
+                        'fieldName' => 'menuTaxon',
+                        'targetEntity' => 'App\\Entity\\Taxonomy\\Taxon',
+                        'joinColumns' => [
+                            [
+                                'name' => 'menu_taxon_id',
+                                'referencedColumnName' => 'id',
+                                'nullable' => true,
+                                'onDelete' => 'SET NULL',
+                            ],
+                        ],
+                        'type' => 2,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'fetch' => 2,
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'sourceToTargetKeyColumns' => [
+                            'menu_taxon_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'menu_taxon_id' => 'menu_taxon_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'menu_taxon_id',
+                        ],
+                        'orphanRemoval' => false,
+                        'declared' => 'Sylius\\Component\\Core\\Model\\Channel',
+                    ],
+                    'shopBillingData' => [
+                        'fieldName' => 'shopBillingData',
+                        'targetEntity' => 'Sylius\\Component\\Core\\Model\\ShopBillingData',
+                        'joinColumns' => [
+                            [
+                                'name' => 'shop_billing_data_id',
+                                'referencedColumnName' => 'id',
+                                'onDelete' => 'CASCADE',
+                                'unique' => true,
+                            ],
+                        ],
+                        'cascade' => [
+                            'remove',
+                            'persist',
+                            'refresh',
+                            'merge',
+                            'detach',
+                        ],
+                        'type' => 1,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'Sylius\\Component\\Core\\Model\\Channel',
+                        'fetch' => 2,
+                        'isCascadeRemove' => true,
+                        'isCascadePersist' => true,
+                        'isCascadeRefresh' => true,
+                        'isCascadeMerge' => true,
+                        'isCascadeDetach' => true,
+                        'sourceToTargetKeyColumns' => [
+                            'shop_billing_data_id' => 'id',
+                        ],
+                        'joinColumnFieldNames' => [
+                            'shop_billing_data_id' => 'shop_billing_data_id',
+                        ],
+                        'targetToSourceKeyColumns' => [
+                            'id' => 'shop_billing_data_id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'currencies' => [
+                        'fieldName' => 'currencies',
+                        'targetEntity' => 'App\\Entity\\Currency\\Currency',
+                        'fetch' => 3,
+                        'joinTable' => [
+                            'name' => 'sylius_channel_currencies',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'channel_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'currency_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'channel_id',
+                            'currency_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'currency_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'locales' => [
+                        'fieldName' => 'locales',
+                        'targetEntity' => 'App\\Entity\\Locale\\Locale',
+                        'fetch' => 3,
+                        'joinTable' => [
+                            'name' => 'sylius_channel_locales',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'channel_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'locale_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'channel_id',
+                            'locale_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'locale_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                    'countries' => [
+                        'fieldName' => 'countries',
+                        'targetEntity' => 'App\\Entity\\Addressing\\Country',
+                        'fetch' => 3,
+                        'joinTable' => [
+                            'name' => 'sylius_channel_countries',
+                            'joinColumns' => [
+                                [
+                                    'name' => 'channel_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                            'inverseJoinColumns' => [
+                                [
+                                    'name' => 'country_id',
+                                    'referencedColumnName' => 'id',
+                                    'nullable' => false,
+                                    'onDelete' => 'CASCADE',
+                                ],
+                            ],
+                        ],
+                        'type' => 8,
+                        'mappedBy' => null,
+                        'inversedBy' => null,
+                        'isOwningSide' => true,
+                        'sourceEntity' => 'App\\Entity\\Channel\\Channel',
+                        'cascade' => [],
+                        'isCascadeRemove' => false,
+                        'isCascadePersist' => false,
+                        'isCascadeRefresh' => false,
+                        'isCascadeMerge' => false,
+                        'isCascadeDetach' => false,
+                        'joinTableColumns' => [
+                            'channel_id',
+                            'country_id',
+                        ],
+                        'isOnDeleteCascade' => true,
+                        'relationToSourceKeyColumns' => [
+                            'channel_id' => 'id',
+                        ],
+                        'relationToTargetKeyColumns' => [
+                            'country_id' => 'id',
+                        ],
+                        'orphanRemoval' => false,
+                    ],
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -68,6 +68,7 @@ COPY docker/php/php-cli.ini /usr/local/etc/php/php-cli.ini
 ENV COMPOSER_ALLOW_SUPERUSER=1
 RUN set -eux; \
 	composer global require "hirak/prestissimo:^0.3" --prefer-dist --no-progress --no-suggest --classmap-authoritative; \
+	composer clear-cache
 ENV PATH="${PATH}:/root/.composer/vendor/bin"
 
 WORKDIR /srv/sylius
@@ -79,6 +80,7 @@ ARG APP_ENV=prod
 COPY composer.json composer.lock symfony.lock ./
 RUN set -eux; \
 	composer install --prefer-dist --no-autoloader --no-scripts --no-progress --no-suggest; \
+	composer clear-cache
 
 # copy only specifically what we need
 COPY .env .env.prod .env.test .env.test_cached ./

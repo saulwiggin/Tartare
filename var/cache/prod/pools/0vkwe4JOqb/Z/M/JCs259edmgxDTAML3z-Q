@@ -1,0 +1,108 @@
+<?php //%255BSylius%255CComponent%255CCore%255CModel%255CShopBillingData%2524CLASSMETADATA%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Mapping\\ClassMetadata'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Mapping\\ClassMetadata')),
+        clone ($p['Doctrine\\ORM\\Id\\IdentityGenerator'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Id\\IdentityGenerator')),
+    ],
+    null,
+    [
+        'stdClass' => [
+            'name' => [
+                'Sylius\\Component\\Core\\Model\\ShopBillingData',
+            ],
+            'namespace' => [
+                'Sylius\\Component\\Core\\Model',
+            ],
+            'rootEntityName' => [
+                'Sylius\\Component\\Core\\Model\\ShopBillingData',
+            ],
+            'identifier' => [
+                [
+                    'id',
+                ],
+            ],
+            'generatorType' => [
+                4,
+            ],
+            'fieldMappings' => [
+                [
+                    'company' => [
+                        'fieldName' => 'company',
+                        'nullable' => true,
+                        'type' => 'string',
+                        'columnName' => 'company',
+                    ],
+                    'taxId' => [
+                        'fieldName' => 'taxId',
+                        'columnName' => 'tax_id',
+                        'nullable' => true,
+                        'type' => 'string',
+                    ],
+                    'countryCode' => [
+                        'fieldName' => 'countryCode',
+                        'columnName' => 'country_code',
+                        'nullable' => true,
+                        'type' => 'string',
+                    ],
+                    'street' => [
+                        'fieldName' => 'street',
+                        'nullable' => true,
+                        'type' => 'string',
+                        'columnName' => 'street',
+                    ],
+                    'city' => [
+                        'fieldName' => 'city',
+                        'nullable' => true,
+                        'type' => 'string',
+                        'columnName' => 'city',
+                    ],
+                    'postcode' => [
+                        'fieldName' => 'postcode',
+                        'nullable' => true,
+                        'type' => 'string',
+                        'columnName' => 'postcode',
+                    ],
+                    'id' => [
+                        'id' => true,
+                        'fieldName' => 'id',
+                        'type' => 'integer',
+                        'columnName' => 'id',
+                    ],
+                ],
+            ],
+            'fieldNames' => [
+                [
+                    'company' => 'company',
+                    'tax_id' => 'taxId',
+                    'country_code' => 'countryCode',
+                    'street' => 'street',
+                    'city' => 'city',
+                    'postcode' => 'postcode',
+                    'id' => 'id',
+                ],
+            ],
+            'columnNames' => [
+                [
+                    'company' => 'company',
+                    'taxId' => 'tax_id',
+                    'countryCode' => 'country_code',
+                    'street' => 'street',
+                    'city' => 'city',
+                    'postcode' => 'postcode',
+                    'id' => 'id',
+                ],
+            ],
+            'table' => [
+                [
+                    'name' => 'sylius_shop_billing_data',
+                ],
+            ],
+            'idGenerator' => [
+                $o[1],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
