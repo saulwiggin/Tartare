@@ -17,8 +17,9 @@
     "require": {
         "php": "^7.3",
         "bitbag/cms-plugin": "^2.4",
+        "platformsh/symfonyflex-bridge": "^2.2",
         "sensiolabs/security-checker": "^6.0",
-        "sylius/sylius": "~1.7.0",
+        "sylius/sylius": "^1.7.0",
         "symfony/dotenv": "^4.4",
         "symfony/flex": "^1.2",
         "symfony/orm-pack": "^2.0"
