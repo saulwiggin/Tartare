@@ -16,6 +16,17 @@ mounts:
     '/public/media': { source: local, source_path: media }
     '/public/upload': { source: local, source_path: upload }
 
+web:
+    locations:
+        '/':
+            root: 'public'
+            passthru: '/index.php'
+
+        '/upload':
+            root: 'public/upload'
+            scripts: false
+            allow: true
+
 dependancies:
     php:
         symfony/console: '*'
