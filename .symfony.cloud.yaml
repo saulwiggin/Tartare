@@ -1,5 +1,5 @@
 # .smyfony.cloud.yaml
-name: 'Tartare'
+name: 'tartare'
 
 type: 'php:7.4'
 
