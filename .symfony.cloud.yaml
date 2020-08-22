@@ -8,7 +8,7 @@ build:
 
 size: AUTO
 
-disk: 8070
+disk: 1070
 
 mounts:
     '/public/assets': { source: local, source_path: assets }
