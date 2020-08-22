@@ -75,6 +75,8 @@ hooks:
             # Starting from here, everything is setup to use the same Node
             yarn encore dev
         )
+        ( chmod -R 777 var/cache 
+        )
 
 crons:
     cleanup_cart:
