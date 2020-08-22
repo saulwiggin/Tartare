@@ -50,19 +50,6 @@ web:
                 # Only allow static files from the assets directories.
                 '\.(jpe?g|png|gif|svgz?)$':
                     allow: true
-        "/media/cache":
-            expires: 2w
-            passthru: false
-            allow: false
-            rules:
-                # Only allow static files from the assets directories.
-                '\.(jpe?g|png|gif|svgz?)$':
-                    allow: true
-        "/media/cache/resolve":
-            passthru: "/index.php"
-            scripts: false
-            expires: -1
-            allow: true
 
 dependancies:
     php:
