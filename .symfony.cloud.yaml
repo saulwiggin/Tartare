@@ -8,7 +8,7 @@ build:
 
 size: AUTO
 
-disk: 5070
+disk: 8070
 
 mounts:
     '/public/assets': { source: local, source_path: assets }
@@ -37,8 +37,6 @@ web:
 dependancies:
     php:
         symfony/console: '*'
-        tokenizer: "3.1"
-        ctype: "1.18"
         sylius/sylius: "~1.7.0"
         symfony/dotenv: "^4.4"
     nodejs:
