@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Tartare
 E-commerce platform based in Paris selling high value art items
 =======
@@ -84,4 +83,3 @@ Authors
 
 Sylius was originally created by [Paweł Jędrzejewski](http://pjedrzejewski.com).
 See the list of [contributors from our awesome community](https://github.com/Sylius/Sylius/contributors).
->>>>>>> 5c2509c... initial commit
