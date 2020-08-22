@@ -10,4 +10,4 @@
     
 "https://*.{default}/":
     type: upstream
-    upstream: "app:http"
+    upstream: "tartare:http"
