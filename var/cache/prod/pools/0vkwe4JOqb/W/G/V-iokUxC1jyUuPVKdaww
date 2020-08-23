@@ -1,0 +1,109 @@
+<?php //%255B50284396009066df3900783148f0b968%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.price AS price_1, s1_.original_price AS original_price_2, s1_.channel_code AS channel_code_3, s1_.id AS id_4, s0_.product_id AS product_id_5, s0_.tax_category_id AS tax_category_id_6, s0_.shipping_category_id AS shipping_category_id_7, s1_.product_variant_id AS product_variant_id_8 FROM sylius_product_variant s0_ LEFT JOIN sylius_channel_pricing s1_ ON s0_.id = s1_.product_variant_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\ProductVariant',
+                    'associations' => 'App\\Entity\\Channel\\ChannelPricing',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'channelPricings',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'price_1' => 'price',
+                    'original_price_2' => 'originalPrice',
+                    'channel_code_3' => 'channelCode',
+                    'id_4' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'product_id_5' => 'integer',
+                    'tax_category_id_6' => 'integer',
+                    'shipping_category_id_7' => 'integer',
+                    'product_variant_id_8' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'product_id_5' => 'product_id',
+                    'tax_category_id_6' => 'tax_category_id',
+                    'shipping_category_id_7' => 'shipping_category_id',
+                    'product_variant_id_8' => 'product_variant_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'price_1' => 'associations',
+                    'original_price_2' => 'associations',
+                    'channel_code_3' => 'associations',
+                    'id_4' => 'associations',
+                    'product_id_5' => 'subject',
+                    'tax_category_id_6' => 'subject',
+                    'shipping_category_id_7' => 'subject',
+                    'product_variant_id_8' => 'associations',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'associations' => 'channel_code_3',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\ProductVariant',
+                    'price_1' => 'App\\Entity\\Channel\\ChannelPricing',
+                    'original_price_2' => 'App\\Entity\\Channel\\ChannelPricing',
+                    'channel_code_3' => 'App\\Entity\\Channel\\ChannelPricing',
+                    'id_4' => 'App\\Entity\\Channel\\ChannelPricing',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

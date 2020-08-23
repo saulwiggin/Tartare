@@ -1,0 +1,104 @@
+<?php //%255B064d34fb8acc97295c5a3e0c2c8232ae%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.adjustments_total AS adjustments_total_1, s1_.id AS id_2, s1_.created_at AS created_at_3, s1_.updated_at AS updated_at_4, s0_.order_id AS order_id_5, s0_.variant_id AS variant_id_6, s1_.order_item_id AS order_item_id_7, s1_.shipment_id AS shipment_id_8 FROM sylius_order_item s0_ LEFT JOIN sylius_order_item_unit s1_ ON s0_.id = s1_.order_item_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Order\\OrderItem',
+                    'associations' => 'App\\Entity\\Order\\OrderItemUnit',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'units',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'adjustments_total_1' => 'adjustmentsTotal',
+                    'id_2' => 'id',
+                    'created_at_3' => 'createdAt',
+                    'updated_at_4' => 'updatedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'order_id_5' => 'integer',
+                    'variant_id_6' => 'integer',
+                    'order_item_id_7' => 'integer',
+                    'shipment_id_8' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'order_id_5' => 'order_id',
+                    'variant_id_6' => 'variant_id',
+                    'order_item_id_7' => 'order_item_id',
+                    'shipment_id_8' => 'shipment_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'adjustments_total_1' => 'associations',
+                    'id_2' => 'associations',
+                    'created_at_3' => 'associations',
+                    'updated_at_4' => 'associations',
+                    'order_id_5' => 'subject',
+                    'variant_id_6' => 'subject',
+                    'order_item_id_7' => 'associations',
+                    'shipment_id_8' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Order\\OrderItem',
+                    'adjustments_total_1' => 'App\\Entity\\Order\\OrderItemUnit',
+                    'id_2' => 'App\\Entity\\Order\\OrderItemUnit',
+                    'created_at_3' => 'App\\Entity\\Order\\OrderItemUnit',
+                    'updated_at_4' => 'App\\Entity\\Order\\OrderItemUnit',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

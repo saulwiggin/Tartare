@@ -1,0 +1,96 @@
+<?php //%255B06792974a4049c5e244d3edabbd15b6b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'productId' => [
+                        0,
+                    ],
+                    'status' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.title AS title_0, s0_.rating AS rating_1, s0_.comment AS comment_2, s0_.status AS status_3, s0_.created_at AS created_at_4, s0_.updated_at AS updated_at_5, s0_.id AS id_6, s0_.product_id AS product_id_7, s0_.author_id AS author_id_8 FROM sylius_product_review s0_ WHERE s0_.product_id = ? AND s0_.status = ? ORDER BY s0_.created_at DESC LIMIT 3',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Product\\ProductReview',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'title_0' => 'title',
+                    'rating_1' => 'rating',
+                    'comment_2' => 'comment',
+                    'status_3' => 'status',
+                    'created_at_4' => 'createdAt',
+                    'updated_at_5' => 'updatedAt',
+                    'id_6' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'product_id_7' => 'integer',
+                    'author_id_8' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'product_id_7' => 'product_id',
+                    'author_id_8' => 'author_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'title_0' => 'o',
+                    'rating_1' => 'o',
+                    'comment_2' => 'o',
+                    'status_3' => 'o',
+                    'created_at_4' => 'o',
+                    'updated_at_5' => 'o',
+                    'id_6' => 'o',
+                    'product_id_7' => 'o',
+                    'author_id_8' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'title_0' => 'App\\Entity\\Product\\ProductReview',
+                    'rating_1' => 'App\\Entity\\Product\\ProductReview',
+                    'comment_2' => 'App\\Entity\\Product\\ProductReview',
+                    'status_3' => 'App\\Entity\\Product\\ProductReview',
+                    'created_at_4' => 'App\\Entity\\Product\\ProductReview',
+                    'updated_at_5' => 'App\\Entity\\Product\\ProductReview',
+                    'id_6' => 'App\\Entity\\Product\\ProductReview',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

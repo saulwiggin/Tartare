@@ -1,0 +1,122 @@
+<?php //%255B17981835806f491f578652ab9ee4d93b%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.type AS type_1, s1_.label AS label_2, s1_.amount AS amount_3, s1_.is_neutral AS is_neutral_4, s1_.is_locked AS is_locked_5, s1_.origin_code AS origin_code_6, s1_.created_at AS created_at_7, s1_.updated_at AS updated_at_8, s1_.id AS id_9, s0_.order_id AS order_id_10, s0_.variant_id AS variant_id_11, s1_.order_id AS order_id_12, s1_.order_item_id AS order_item_id_13, s1_.order_item_unit_id AS order_item_unit_id_14 FROM sylius_order_item s0_ LEFT JOIN sylius_adjustment s1_ ON s0_.id = s1_.order_item_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Order\\OrderItem',
+                    'associations' => 'App\\Entity\\Order\\Adjustment',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'adjustments',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'type_1' => 'type',
+                    'label_2' => 'label',
+                    'amount_3' => 'amount',
+                    'is_neutral_4' => 'neutral',
+                    'is_locked_5' => 'locked',
+                    'origin_code_6' => 'originCode',
+                    'created_at_7' => 'createdAt',
+                    'updated_at_8' => 'updatedAt',
+                    'id_9' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'order_id_10' => 'integer',
+                    'variant_id_11' => 'integer',
+                    'order_id_12' => 'integer',
+                    'order_item_id_13' => 'integer',
+                    'order_item_unit_id_14' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'order_id_10' => 'order_id',
+                    'variant_id_11' => 'variant_id',
+                    'order_id_12' => 'order_id',
+                    'order_item_id_13' => 'order_item_id',
+                    'order_item_unit_id_14' => 'order_item_unit_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'type_1' => 'associations',
+                    'label_2' => 'associations',
+                    'amount_3' => 'associations',
+                    'is_neutral_4' => 'associations',
+                    'is_locked_5' => 'associations',
+                    'origin_code_6' => 'associations',
+                    'created_at_7' => 'associations',
+                    'updated_at_8' => 'associations',
+                    'id_9' => 'associations',
+                    'order_id_10' => 'subject',
+                    'variant_id_11' => 'subject',
+                    'order_id_12' => 'associations',
+                    'order_item_id_13' => 'associations',
+                    'order_item_unit_id_14' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Order\\OrderItem',
+                    'type_1' => 'App\\Entity\\Order\\Adjustment',
+                    'label_2' => 'App\\Entity\\Order\\Adjustment',
+                    'amount_3' => 'App\\Entity\\Order\\Adjustment',
+                    'is_neutral_4' => 'App\\Entity\\Order\\Adjustment',
+                    'is_locked_5' => 'App\\Entity\\Order\\Adjustment',
+                    'origin_code_6' => 'App\\Entity\\Order\\Adjustment',
+                    'created_at_7' => 'App\\Entity\\Order\\Adjustment',
+                    'updated_at_8' => 'App\\Entity\\Order\\Adjustment',
+                    'id_9' => 'App\\Entity\\Order\\Adjustment',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,131 @@
+<?php //%255B1fee9296dccfbd20d373a358b794bed7%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.type AS type_1, s1_.label AS label_2, s1_.amount AS amount_3, s1_.is_neutral AS is_neutral_4, s1_.is_locked AS is_locked_5, s1_.origin_code AS origin_code_6, s1_.created_at AS created_at_7, s1_.updated_at AS updated_at_8, s1_.id AS id_9, s0_.channel_id AS channel_id_10, s0_.promotion_coupon_id AS promotion_coupon_id_11, s0_.customer_id AS customer_id_12, s0_.shipping_address_id AS shipping_address_id_13, s0_.billing_address_id AS billing_address_id_14, s1_.order_id AS order_id_15, s1_.order_item_id AS order_item_id_16, s1_.order_item_unit_id AS order_item_unit_id_17 FROM sylius_order s0_ LEFT JOIN sylius_adjustment s1_ ON s0_.id = s1_.order_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Order\\Order',
+                    'associations' => 'App\\Entity\\Order\\Adjustment',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'adjustments',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'type_1' => 'type',
+                    'label_2' => 'label',
+                    'amount_3' => 'amount',
+                    'is_neutral_4' => 'neutral',
+                    'is_locked_5' => 'locked',
+                    'origin_code_6' => 'originCode',
+                    'created_at_7' => 'createdAt',
+                    'updated_at_8' => 'updatedAt',
+                    'id_9' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'channel_id_10' => 'integer',
+                    'promotion_coupon_id_11' => 'integer',
+                    'customer_id_12' => 'integer',
+                    'shipping_address_id_13' => 'integer',
+                    'billing_address_id_14' => 'integer',
+                    'order_id_15' => 'integer',
+                    'order_item_id_16' => 'integer',
+                    'order_item_unit_id_17' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'channel_id_10' => 'channel_id',
+                    'promotion_coupon_id_11' => 'promotion_coupon_id',
+                    'customer_id_12' => 'customer_id',
+                    'shipping_address_id_13' => 'shipping_address_id',
+                    'billing_address_id_14' => 'billing_address_id',
+                    'order_id_15' => 'order_id',
+                    'order_item_id_16' => 'order_item_id',
+                    'order_item_unit_id_17' => 'order_item_unit_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'type_1' => 'associations',
+                    'label_2' => 'associations',
+                    'amount_3' => 'associations',
+                    'is_neutral_4' => 'associations',
+                    'is_locked_5' => 'associations',
+                    'origin_code_6' => 'associations',
+                    'created_at_7' => 'associations',
+                    'updated_at_8' => 'associations',
+                    'id_9' => 'associations',
+                    'channel_id_10' => 'subject',
+                    'promotion_coupon_id_11' => 'subject',
+                    'customer_id_12' => 'subject',
+                    'shipping_address_id_13' => 'subject',
+                    'billing_address_id_14' => 'subject',
+                    'order_id_15' => 'associations',
+                    'order_item_id_16' => 'associations',
+                    'order_item_unit_id_17' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Order\\Order',
+                    'type_1' => 'App\\Entity\\Order\\Adjustment',
+                    'label_2' => 'App\\Entity\\Order\\Adjustment',
+                    'amount_3' => 'App\\Entity\\Order\\Adjustment',
+                    'is_neutral_4' => 'App\\Entity\\Order\\Adjustment',
+                    'is_locked_5' => 'App\\Entity\\Order\\Adjustment',
+                    'origin_code_6' => 'App\\Entity\\Order\\Adjustment',
+                    'created_at_7' => 'App\\Entity\\Order\\Adjustment',
+                    'updated_at_8' => 'App\\Entity\\Order\\Adjustment',
+                    'id_9' => 'App\\Entity\\Order\\Adjustment',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

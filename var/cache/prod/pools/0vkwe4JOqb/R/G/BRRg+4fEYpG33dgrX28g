@@ -1,0 +1,58 @@
+<?php //%255B09b667f98f15041ecf03aeac4da83269%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'locale' => [
+                        0,
+                    ],
+                    'taxonLeft' => [
+                        1,
+                    ],
+                    'taxonRight' => [
+                        2,
+                    ],
+                    'taxonRoot' => [
+                        3,
+                    ],
+                    'channel' => [
+                        4,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT DISTINCT count(DISTINCT s0_.id) AS sclr_0 FROM sylius_product s0_ INNER JOIN sylius_product_translation s1_ ON s0_.id = s1_.translatable_id AND (s1_.locale = ?) INNER JOIN sylius_product_taxon s2_ ON s0_.id = s2_.product_id INNER JOIN sylius_taxon s3_ ON s2_.taxon_id = s3_.id WHERE s3_.tree_left >= ? AND s3_.tree_right <= ? AND s3_.tree_root = ? AND EXISTS (SELECT 1 FROM sylius_product_channels s4_ INNER JOIN sylius_channel s5_ ON s4_.channel_id = s5_.id WHERE s4_.product_id = s0_.id AND s5_.id IN (?)) AND s0_.enabled = 1',
+            ],
+        ],
+        'stdClass' => [
+            'scalarMappings' => [
+                2 => [
+                    'sclr_0' => 1,
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'sclr_0' => 'string',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

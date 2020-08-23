@@ -1,0 +1,98 @@
+<?php //%255Bcdcf613ce8fe5794ee57179600033306%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.code AS code_1, s1_.position AS position_2, s1_.created_at AS created_at_3, s1_.updated_at AS updated_at_4, s1_.id AS id_5, s0_.main_taxon_id AS main_taxon_id_6 FROM sylius_product s0_ LEFT JOIN sylius_product_options s2_ ON s0_.id = s2_.product_id LEFT JOIN sylius_product_option s1_ ON s1_.id = s2_.option_id WHERE s0_.id IN (?) ORDER BY s1_.position ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\Product',
+                    'associations' => 'App\\Entity\\Product\\ProductOption',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'options',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'code_1' => 'code',
+                    'position_2' => 'position',
+                    'created_at_3' => 'createdAt',
+                    'updated_at_4' => 'updatedAt',
+                    'id_5' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'main_taxon_id_6' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'main_taxon_id_6' => 'main_taxon_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'code_1' => 'associations',
+                    'position_2' => 'associations',
+                    'created_at_3' => 'associations',
+                    'updated_at_4' => 'associations',
+                    'id_5' => 'associations',
+                    'main_taxon_id_6' => 'subject',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\Product',
+                    'code_1' => 'App\\Entity\\Product\\ProductOption',
+                    'position_2' => 'App\\Entity\\Product\\ProductOption',
+                    'created_at_3' => 'App\\Entity\\Product\\ProductOption',
+                    'updated_at_4' => 'App\\Entity\\Product\\ProductOption',
+                    'id_5' => 'App\\Entity\\Product\\ProductOption',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

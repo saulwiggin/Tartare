@@ -1,0 +1,128 @@
+<?php //%255Bfbff7afebb2fe7ec0a8b4b2e1fe3808f%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.quantity AS quantity_1, s1_.unit_price AS unit_price_2, s1_.units_total AS units_total_3, s1_.adjustments_total AS adjustments_total_4, s1_.total AS total_5, s1_.is_immutable AS is_immutable_6, s1_.id AS id_7, s1_.product_name AS product_name_8, s1_.variant_name AS variant_name_9, s0_.channel_id AS channel_id_10, s0_.promotion_coupon_id AS promotion_coupon_id_11, s0_.customer_id AS customer_id_12, s0_.shipping_address_id AS shipping_address_id_13, s0_.billing_address_id AS billing_address_id_14, s1_.order_id AS order_id_15, s1_.variant_id AS variant_id_16 FROM sylius_order s0_ LEFT JOIN sylius_order_item s1_ ON s0_.id = s1_.order_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Order\\Order',
+                    'associations' => 'App\\Entity\\Order\\OrderItem',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'items',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'quantity_1' => 'quantity',
+                    'unit_price_2' => 'unitPrice',
+                    'units_total_3' => 'unitsTotal',
+                    'adjustments_total_4' => 'adjustmentsTotal',
+                    'total_5' => 'total',
+                    'is_immutable_6' => 'immutable',
+                    'id_7' => 'id',
+                    'product_name_8' => 'productName',
+                    'variant_name_9' => 'variantName',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'channel_id_10' => 'integer',
+                    'promotion_coupon_id_11' => 'integer',
+                    'customer_id_12' => 'integer',
+                    'shipping_address_id_13' => 'integer',
+                    'billing_address_id_14' => 'integer',
+                    'order_id_15' => 'integer',
+                    'variant_id_16' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'channel_id_10' => 'channel_id',
+                    'promotion_coupon_id_11' => 'promotion_coupon_id',
+                    'customer_id_12' => 'customer_id',
+                    'shipping_address_id_13' => 'shipping_address_id',
+                    'billing_address_id_14' => 'billing_address_id',
+                    'order_id_15' => 'order_id',
+                    'variant_id_16' => 'variant_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'quantity_1' => 'associations',
+                    'unit_price_2' => 'associations',
+                    'units_total_3' => 'associations',
+                    'adjustments_total_4' => 'associations',
+                    'total_5' => 'associations',
+                    'is_immutable_6' => 'associations',
+                    'id_7' => 'associations',
+                    'product_name_8' => 'associations',
+                    'variant_name_9' => 'associations',
+                    'channel_id_10' => 'subject',
+                    'promotion_coupon_id_11' => 'subject',
+                    'customer_id_12' => 'subject',
+                    'shipping_address_id_13' => 'subject',
+                    'billing_address_id_14' => 'subject',
+                    'order_id_15' => 'associations',
+                    'variant_id_16' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Order\\Order',
+                    'quantity_1' => 'App\\Entity\\Order\\OrderItem',
+                    'unit_price_2' => 'App\\Entity\\Order\\OrderItem',
+                    'units_total_3' => 'App\\Entity\\Order\\OrderItem',
+                    'adjustments_total_4' => 'App\\Entity\\Order\\OrderItem',
+                    'total_5' => 'App\\Entity\\Order\\OrderItem',
+                    'is_immutable_6' => 'App\\Entity\\Order\\OrderItem',
+                    'id_7' => 'App\\Entity\\Order\\OrderItem',
+                    'product_name_8' => 'App\\Entity\\Order\\OrderItem',
+                    'variant_name_9' => 'App\\Entity\\Order\\OrderItem',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

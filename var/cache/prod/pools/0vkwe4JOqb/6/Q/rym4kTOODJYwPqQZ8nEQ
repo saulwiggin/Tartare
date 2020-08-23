@@ -1,0 +1,129 @@
+<?php //%255B67312785759d9457dd6668b0c430563f%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'email' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.username AS username_0, s0_.username_canonical AS username_canonical_1, s0_.enabled AS enabled_2, s0_.salt AS salt_3, s0_.password AS password_4, s0_.encoder_name AS encoder_name_5, s0_.last_login AS last_login_6, s0_.password_reset_token AS password_reset_token_7, s0_.password_requested_at AS password_requested_at_8, s0_.email_verification_token AS email_verification_token_9, s0_.verified_at AS verified_at_10, s0_.locked AS locked_11, s0_.expires_at AS expires_at_12, s0_.credentials_expire_at AS credentials_expire_at_13, s0_.roles AS roles_14, s0_.email AS email_15, s0_.email_canonical AS email_canonical_16, s0_.created_at AS created_at_17, s0_.updated_at AS updated_at_18, s0_.id AS id_19, s0_.customer_id AS customer_id_20 FROM sylius_shop_user s0_ INNER JOIN sylius_customer s1_ ON s0_.customer_id = s1_.id WHERE s1_.email_canonical = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\User\\ShopUser',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'username_0' => 'username',
+                    'username_canonical_1' => 'usernameCanonical',
+                    'enabled_2' => 'enabled',
+                    'salt_3' => 'salt',
+                    'password_4' => 'password',
+                    'encoder_name_5' => 'encoderName',
+                    'last_login_6' => 'lastLogin',
+                    'password_reset_token_7' => 'passwordResetToken',
+                    'password_requested_at_8' => 'passwordRequestedAt',
+                    'email_verification_token_9' => 'emailVerificationToken',
+                    'verified_at_10' => 'verifiedAt',
+                    'locked_11' => 'locked',
+                    'expires_at_12' => 'expiresAt',
+                    'credentials_expire_at_13' => 'credentialsExpireAt',
+                    'roles_14' => 'roles',
+                    'email_15' => 'email',
+                    'email_canonical_16' => 'emailCanonical',
+                    'created_at_17' => 'createdAt',
+                    'updated_at_18' => 'updatedAt',
+                    'id_19' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'customer_id_20' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'customer_id_20' => 'customer_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'username_0' => 'o',
+                    'username_canonical_1' => 'o',
+                    'enabled_2' => 'o',
+                    'salt_3' => 'o',
+                    'password_4' => 'o',
+                    'encoder_name_5' => 'o',
+                    'last_login_6' => 'o',
+                    'password_reset_token_7' => 'o',
+                    'password_requested_at_8' => 'o',
+                    'email_verification_token_9' => 'o',
+                    'verified_at_10' => 'o',
+                    'locked_11' => 'o',
+                    'expires_at_12' => 'o',
+                    'credentials_expire_at_13' => 'o',
+                    'roles_14' => 'o',
+                    'email_15' => 'o',
+                    'email_canonical_16' => 'o',
+                    'created_at_17' => 'o',
+                    'updated_at_18' => 'o',
+                    'id_19' => 'o',
+                    'customer_id_20' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'username_0' => 'App\\Entity\\User\\ShopUser',
+                    'username_canonical_1' => 'App\\Entity\\User\\ShopUser',
+                    'enabled_2' => 'App\\Entity\\User\\ShopUser',
+                    'salt_3' => 'App\\Entity\\User\\ShopUser',
+                    'password_4' => 'App\\Entity\\User\\ShopUser',
+                    'encoder_name_5' => 'App\\Entity\\User\\ShopUser',
+                    'last_login_6' => 'App\\Entity\\User\\ShopUser',
+                    'password_reset_token_7' => 'App\\Entity\\User\\ShopUser',
+                    'password_requested_at_8' => 'App\\Entity\\User\\ShopUser',
+                    'email_verification_token_9' => 'App\\Entity\\User\\ShopUser',
+                    'verified_at_10' => 'App\\Entity\\User\\ShopUser',
+                    'locked_11' => 'App\\Entity\\User\\ShopUser',
+                    'expires_at_12' => 'App\\Entity\\User\\ShopUser',
+                    'credentials_expire_at_13' => 'App\\Entity\\User\\ShopUser',
+                    'roles_14' => 'App\\Entity\\User\\ShopUser',
+                    'email_15' => 'App\\Entity\\User\\ShopUser',
+                    'email_canonical_16' => 'App\\Entity\\User\\ShopUser',
+                    'created_at_17' => 'App\\Entity\\User\\ShopUser',
+                    'updated_at_18' => 'App\\Entity\\User\\ShopUser',
+                    'id_19' => 'App\\Entity\\User\\ShopUser',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

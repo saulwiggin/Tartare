@@ -1,0 +1,113 @@
+<?php //%255B603649f8d1be5c4a6bb8f716848bb6af%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.code AS code_1, s1_.created_at AS created_at_2, s1_.updated_at AS updated_at_3, s1_.enabled AS enabled_4, s1_.id AS id_5, s1_.variant_selection_method AS variant_selection_method_6, s1_.average_rating AS average_rating_7, s0_.product_id AS product_id_8, s0_.tax_category_id AS tax_category_id_9, s0_.shipping_category_id AS shipping_category_id_10, s1_.main_taxon_id AS main_taxon_id_11 FROM sylius_product_variant s0_ LEFT JOIN sylius_product s1_ ON s0_.product_id = s1_.id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\ProductVariant',
+                    'associations' => 'App\\Entity\\Product\\Product',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'product',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'code_1' => 'code',
+                    'created_at_2' => 'createdAt',
+                    'updated_at_3' => 'updatedAt',
+                    'enabled_4' => 'enabled',
+                    'id_5' => 'id',
+                    'variant_selection_method_6' => 'variantSelectionMethod',
+                    'average_rating_7' => 'averageRating',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'product_id_8' => 'integer',
+                    'tax_category_id_9' => 'integer',
+                    'shipping_category_id_10' => 'integer',
+                    'main_taxon_id_11' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'product_id_8' => 'product_id',
+                    'tax_category_id_9' => 'tax_category_id',
+                    'shipping_category_id_10' => 'shipping_category_id',
+                    'main_taxon_id_11' => 'main_taxon_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'code_1' => 'associations',
+                    'created_at_2' => 'associations',
+                    'updated_at_3' => 'associations',
+                    'enabled_4' => 'associations',
+                    'id_5' => 'associations',
+                    'variant_selection_method_6' => 'associations',
+                    'average_rating_7' => 'associations',
+                    'product_id_8' => 'subject',
+                    'tax_category_id_9' => 'subject',
+                    'shipping_category_id_10' => 'subject',
+                    'main_taxon_id_11' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\ProductVariant',
+                    'code_1' => 'App\\Entity\\Product\\Product',
+                    'created_at_2' => 'App\\Entity\\Product\\Product',
+                    'updated_at_3' => 'App\\Entity\\Product\\Product',
+                    'enabled_4' => 'App\\Entity\\Product\\Product',
+                    'id_5' => 'App\\Entity\\Product\\Product',
+                    'variant_selection_method_6' => 'App\\Entity\\Product\\Product',
+                    'average_rating_7' => 'App\\Entity\\Product\\Product',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

@@ -1,0 +1,135 @@
+<?php //%255B888d2d100066b8df60bf42b429b0b966%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'id' => [
+                        0,
+                    ],
+                    'state' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.number AS number_0, s0_.notes AS notes_1, s0_.state AS state_2, s0_.checkout_completed_at AS checkout_completed_at_3, s0_.items_total AS items_total_4, s0_.adjustments_total AS adjustments_total_5, s0_.total AS total_6, s0_.created_at AS created_at_7, s0_.updated_at AS updated_at_8, s0_.id AS id_9, s0_.currency_code AS currency_code_10, s0_.locale_code AS locale_code_11, s0_.checkout_state AS checkout_state_12, s0_.payment_state AS payment_state_13, s0_.shipping_state AS shipping_state_14, s0_.token_value AS token_value_15, s0_.customer_ip AS customer_ip_16, s0_.channel_id AS channel_id_17, s0_.promotion_coupon_id AS promotion_coupon_id_18, s0_.customer_id AS customer_id_19, s0_.shipping_address_id AS shipping_address_id_20, s0_.billing_address_id AS billing_address_id_21 FROM sylius_order s0_ WHERE s0_.id = ? AND s0_.state = ?',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Order\\Order',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'number_0' => 'number',
+                    'notes_1' => 'notes',
+                    'state_2' => 'state',
+                    'checkout_completed_at_3' => 'checkoutCompletedAt',
+                    'items_total_4' => 'itemsTotal',
+                    'adjustments_total_5' => 'adjustmentsTotal',
+                    'total_6' => 'total',
+                    'created_at_7' => 'createdAt',
+                    'updated_at_8' => 'updatedAt',
+                    'id_9' => 'id',
+                    'currency_code_10' => 'currencyCode',
+                    'locale_code_11' => 'localeCode',
+                    'checkout_state_12' => 'checkoutState',
+                    'payment_state_13' => 'paymentState',
+                    'shipping_state_14' => 'shippingState',
+                    'token_value_15' => 'tokenValue',
+                    'customer_ip_16' => 'customerIp',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'channel_id_17' => 'integer',
+                    'promotion_coupon_id_18' => 'integer',
+                    'customer_id_19' => 'integer',
+                    'shipping_address_id_20' => 'integer',
+                    'billing_address_id_21' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'channel_id_17' => 'channel_id',
+                    'promotion_coupon_id_18' => 'promotion_coupon_id',
+                    'customer_id_19' => 'customer_id',
+                    'shipping_address_id_20' => 'shipping_address_id',
+                    'billing_address_id_21' => 'billing_address_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'number_0' => 'o',
+                    'notes_1' => 'o',
+                    'state_2' => 'o',
+                    'checkout_completed_at_3' => 'o',
+                    'items_total_4' => 'o',
+                    'adjustments_total_5' => 'o',
+                    'total_6' => 'o',
+                    'created_at_7' => 'o',
+                    'updated_at_8' => 'o',
+                    'id_9' => 'o',
+                    'currency_code_10' => 'o',
+                    'locale_code_11' => 'o',
+                    'checkout_state_12' => 'o',
+                    'payment_state_13' => 'o',
+                    'shipping_state_14' => 'o',
+                    'token_value_15' => 'o',
+                    'customer_ip_16' => 'o',
+                    'channel_id_17' => 'o',
+                    'promotion_coupon_id_18' => 'o',
+                    'customer_id_19' => 'o',
+                    'shipping_address_id_20' => 'o',
+                    'billing_address_id_21' => 'o',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'number_0' => 'App\\Entity\\Order\\Order',
+                    'notes_1' => 'App\\Entity\\Order\\Order',
+                    'state_2' => 'App\\Entity\\Order\\Order',
+                    'checkout_completed_at_3' => 'App\\Entity\\Order\\Order',
+                    'items_total_4' => 'App\\Entity\\Order\\Order',
+                    'adjustments_total_5' => 'App\\Entity\\Order\\Order',
+                    'total_6' => 'App\\Entity\\Order\\Order',
+                    'created_at_7' => 'App\\Entity\\Order\\Order',
+                    'updated_at_8' => 'App\\Entity\\Order\\Order',
+                    'id_9' => 'App\\Entity\\Order\\Order',
+                    'currency_code_10' => 'App\\Entity\\Order\\Order',
+                    'locale_code_11' => 'App\\Entity\\Order\\Order',
+                    'checkout_state_12' => 'App\\Entity\\Order\\Order',
+                    'payment_state_13' => 'App\\Entity\\Order\\Order',
+                    'shipping_state_14' => 'App\\Entity\\Order\\Order',
+                    'token_value_15' => 'App\\Entity\\Order\\Order',
+                    'customer_ip_16' => 'App\\Entity\\Order\\Order',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

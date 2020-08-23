@@ -1,0 +1,115 @@
+<?php //%255Baf1c6380a37605f391df7bbf66b83e80%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.name AS name_1, s1_.slug AS slug_2, s1_.description AS description_3, s1_.meta_keywords AS meta_keywords_4, s1_.meta_description AS meta_description_5, s1_.id AS id_6, s1_.short_description AS short_description_7, s1_.locale AS locale_8, s0_.main_taxon_id AS main_taxon_id_9, s1_.translatable_id AS translatable_id_10 FROM sylius_product s0_ LEFT JOIN sylius_product_translation s1_ ON s0_.id = s1_.translatable_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\Product',
+                    'associations' => 'App\\Entity\\Product\\ProductTranslation',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'translations',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'name_1' => 'name',
+                    'slug_2' => 'slug',
+                    'description_3' => 'description',
+                    'meta_keywords_4' => 'metaKeywords',
+                    'meta_description_5' => 'metaDescription',
+                    'id_6' => 'id',
+                    'short_description_7' => 'shortDescription',
+                    'locale_8' => 'locale',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'main_taxon_id_9' => 'integer',
+                    'translatable_id_10' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'main_taxon_id_9' => 'main_taxon_id',
+                    'translatable_id_10' => 'translatable_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'name_1' => 'associations',
+                    'slug_2' => 'associations',
+                    'description_3' => 'associations',
+                    'meta_keywords_4' => 'associations',
+                    'meta_description_5' => 'associations',
+                    'id_6' => 'associations',
+                    'short_description_7' => 'associations',
+                    'locale_8' => 'associations',
+                    'main_taxon_id_9' => 'subject',
+                    'translatable_id_10' => 'associations',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'associations' => 'locale_8',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\Product',
+                    'name_1' => 'App\\Entity\\Product\\ProductTranslation',
+                    'slug_2' => 'App\\Entity\\Product\\ProductTranslation',
+                    'description_3' => 'App\\Entity\\Product\\ProductTranslation',
+                    'meta_keywords_4' => 'App\\Entity\\Product\\ProductTranslation',
+                    'meta_description_5' => 'App\\Entity\\Product\\ProductTranslation',
+                    'id_6' => 'App\\Entity\\Product\\ProductTranslation',
+                    'short_description_7' => 'App\\Entity\\Product\\ProductTranslation',
+                    'locale_8' => 'App\\Entity\\Product\\ProductTranslation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

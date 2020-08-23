@@ -1,0 +1,134 @@
+<?php //%255Bade7d9abb04756e51eb6576a6c8b5f9c%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.code AS code_1, s1_.created_at AS created_at_2, s1_.updated_at AS updated_at_3, s1_.position AS position_4, s1_.id AS id_5, s1_.version AS version_6, s1_.on_hold AS on_hold_7, s1_.on_hand AS on_hand_8, s1_.tracked AS tracked_9, s1_.width AS width_10, s1_.height AS height_11, s1_.depth AS depth_12, s1_.weight AS weight_13, s1_.shipping_required AS shipping_required_14, s0_.main_taxon_id AS main_taxon_id_15, s1_.product_id AS product_id_16, s1_.tax_category_id AS tax_category_id_17, s1_.shipping_category_id AS shipping_category_id_18 FROM sylius_product s0_ LEFT JOIN sylius_product_variant s1_ ON s0_.id = s1_.product_id WHERE s0_.id IN (?) ORDER BY s1_.position ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\Product',
+                    'associations' => 'App\\Entity\\Product\\ProductVariant',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'variants',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'code_1' => 'code',
+                    'created_at_2' => 'createdAt',
+                    'updated_at_3' => 'updatedAt',
+                    'position_4' => 'position',
+                    'id_5' => 'id',
+                    'version_6' => 'version',
+                    'on_hold_7' => 'onHold',
+                    'on_hand_8' => 'onHand',
+                    'tracked_9' => 'tracked',
+                    'width_10' => 'width',
+                    'height_11' => 'height',
+                    'depth_12' => 'depth',
+                    'weight_13' => 'weight',
+                    'shipping_required_14' => 'shippingRequired',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'main_taxon_id_15' => 'integer',
+                    'product_id_16' => 'integer',
+                    'tax_category_id_17' => 'integer',
+                    'shipping_category_id_18' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'main_taxon_id_15' => 'main_taxon_id',
+                    'product_id_16' => 'product_id',
+                    'tax_category_id_17' => 'tax_category_id',
+                    'shipping_category_id_18' => 'shipping_category_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'code_1' => 'associations',
+                    'created_at_2' => 'associations',
+                    'updated_at_3' => 'associations',
+                    'position_4' => 'associations',
+                    'id_5' => 'associations',
+                    'version_6' => 'associations',
+                    'on_hold_7' => 'associations',
+                    'on_hand_8' => 'associations',
+                    'tracked_9' => 'associations',
+                    'width_10' => 'associations',
+                    'height_11' => 'associations',
+                    'depth_12' => 'associations',
+                    'weight_13' => 'associations',
+                    'shipping_required_14' => 'associations',
+                    'main_taxon_id_15' => 'subject',
+                    'product_id_16' => 'associations',
+                    'tax_category_id_17' => 'associations',
+                    'shipping_category_id_18' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\Product',
+                    'code_1' => 'App\\Entity\\Product\\ProductVariant',
+                    'created_at_2' => 'App\\Entity\\Product\\ProductVariant',
+                    'updated_at_3' => 'App\\Entity\\Product\\ProductVariant',
+                    'position_4' => 'App\\Entity\\Product\\ProductVariant',
+                    'id_5' => 'App\\Entity\\Product\\ProductVariant',
+                    'version_6' => 'App\\Entity\\Product\\ProductVariant',
+                    'on_hold_7' => 'App\\Entity\\Product\\ProductVariant',
+                    'on_hand_8' => 'App\\Entity\\Product\\ProductVariant',
+                    'tracked_9' => 'App\\Entity\\Product\\ProductVariant',
+                    'width_10' => 'App\\Entity\\Product\\ProductVariant',
+                    'height_11' => 'App\\Entity\\Product\\ProductVariant',
+                    'depth_12' => 'App\\Entity\\Product\\ProductVariant',
+                    'weight_13' => 'App\\Entity\\Product\\ProductVariant',
+                    'shipping_required_14' => 'App\\Entity\\Product\\ProductVariant',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

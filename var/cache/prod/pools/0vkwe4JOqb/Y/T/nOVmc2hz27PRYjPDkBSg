@@ -1,0 +1,95 @@
+<?php //%255Bac4f018781ff975b085134ab33190e26%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'subjects' => [
+                        0,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.id AS id_0, s1_.type AS type_1, s1_.path AS path_2, s1_.id AS id_3, s0_.main_taxon_id AS main_taxon_id_4, s1_.owner_id AS owner_id_5 FROM sylius_product s0_ LEFT JOIN sylius_product_image s1_ ON s0_.id = s1_.owner_id WHERE s0_.id IN (?)',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'subject' => 'App\\Entity\\Product\\Product',
+                    'associations' => 'App\\Entity\\Product\\ProductImage',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'associations' => 'images',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'associations' => 'subject',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'id_0' => 'id',
+                    'type_1' => 'type',
+                    'path_2' => 'path',
+                    'id_3' => 'id',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'main_taxon_id_4' => 'integer',
+                    'owner_id_5' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'subject' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'main_taxon_id_4' => 'main_taxon_id',
+                    'owner_id_5' => 'owner_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'id_0' => 'subject',
+                    'type_1' => 'associations',
+                    'path_2' => 'associations',
+                    'id_3' => 'associations',
+                    'main_taxon_id_4' => 'subject',
+                    'owner_id_5' => 'associations',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'id_0' => 'App\\Entity\\Product\\Product',
+                    'type_1' => 'App\\Entity\\Product\\ProductImage',
+                    'path_2' => 'App\\Entity\\Product\\ProductImage',
+                    'id_3' => 'App\\Entity\\Product\\ProductImage',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
