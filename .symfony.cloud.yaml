@@ -76,6 +76,7 @@ hooks:
             yarn encore dev
         )
         ( mkdir var/cache/dev
+          chmod -R 777 var/cache
         )
 
 crons:

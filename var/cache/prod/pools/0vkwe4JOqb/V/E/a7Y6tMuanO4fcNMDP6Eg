@@ -1,0 +1,136 @@
+<?php //%255B59656e57f5793845e1b2eeb85d75db0f%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'locale' => [
+                        0,
+                    ],
+                    'channel' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.code AS code_0, s0_.created_at AS created_at_1, s0_.updated_at AS updated_at_2, s0_.enabled AS enabled_3, s0_.id AS id_4, s0_.variant_selection_method AS variant_selection_method_5, s0_.average_rating AS average_rating_6, s1_.name AS name_7, s1_.slug AS slug_8, s1_.description AS description_9, s1_.meta_keywords AS meta_keywords_10, s1_.meta_description AS meta_description_11, s1_.id AS id_12, s1_.short_description AS short_description_13, s1_.locale AS locale_14, s0_.main_taxon_id AS main_taxon_id_15, s1_.translatable_id AS translatable_id_16 FROM sylius_product s0_ INNER JOIN sylius_product_translation s1_ ON s0_.id = s1_.translatable_id AND (s1_.locale = ?) WHERE EXISTS (SELECT 1 FROM sylius_product_channels s2_ INNER JOIN sylius_channel s3_ ON s2_.channel_id = s3_.id WHERE s2_.product_id = s0_.id AND s3_.id IN (?)) AND s0_.enabled = 1 ORDER BY s0_.created_at DESC LIMIT 4',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Product\\Product',
+                    'translation' => 'App\\Entity\\Product\\ProductTranslation',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'translation' => 'translations',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'translation' => 'o',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'code_0' => 'code',
+                    'created_at_1' => 'createdAt',
+                    'updated_at_2' => 'updatedAt',
+                    'enabled_3' => 'enabled',
+                    'id_4' => 'id',
+                    'variant_selection_method_5' => 'variantSelectionMethod',
+                    'average_rating_6' => 'averageRating',
+                    'name_7' => 'name',
+                    'slug_8' => 'slug',
+                    'description_9' => 'description',
+                    'meta_keywords_10' => 'metaKeywords',
+                    'meta_description_11' => 'metaDescription',
+                    'id_12' => 'id',
+                    'short_description_13' => 'shortDescription',
+                    'locale_14' => 'locale',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'main_taxon_id_15' => 'integer',
+                    'translatable_id_16' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'main_taxon_id_15' => 'main_taxon_id',
+                    'translatable_id_16' => 'translatable_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'code_0' => 'o',
+                    'created_at_1' => 'o',
+                    'updated_at_2' => 'o',
+                    'enabled_3' => 'o',
+                    'id_4' => 'o',
+                    'variant_selection_method_5' => 'o',
+                    'average_rating_6' => 'o',
+                    'name_7' => 'translation',
+                    'slug_8' => 'translation',
+                    'description_9' => 'translation',
+                    'meta_keywords_10' => 'translation',
+                    'meta_description_11' => 'translation',
+                    'id_12' => 'translation',
+                    'short_description_13' => 'translation',
+                    'locale_14' => 'translation',
+                    'main_taxon_id_15' => 'o',
+                    'translatable_id_16' => 'translation',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'translation' => 'locale_14',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'code_0' => 'App\\Entity\\Product\\Product',
+                    'created_at_1' => 'App\\Entity\\Product\\Product',
+                    'updated_at_2' => 'App\\Entity\\Product\\Product',
+                    'enabled_3' => 'App\\Entity\\Product\\Product',
+                    'id_4' => 'App\\Entity\\Product\\Product',
+                    'variant_selection_method_5' => 'App\\Entity\\Product\\Product',
+                    'average_rating_6' => 'App\\Entity\\Product\\Product',
+                    'name_7' => 'App\\Entity\\Product\\ProductTranslation',
+                    'slug_8' => 'App\\Entity\\Product\\ProductTranslation',
+                    'description_9' => 'App\\Entity\\Product\\ProductTranslation',
+                    'meta_keywords_10' => 'App\\Entity\\Product\\ProductTranslation',
+                    'meta_description_11' => 'App\\Entity\\Product\\ProductTranslation',
+                    'id_12' => 'App\\Entity\\Product\\ProductTranslation',
+                    'short_description_13' => 'App\\Entity\\Product\\ProductTranslation',
+                    'locale_14' => 'App\\Entity\\Product\\ProductTranslation',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];

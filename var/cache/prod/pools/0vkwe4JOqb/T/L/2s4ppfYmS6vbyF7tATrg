@@ -1,0 +1,166 @@
+<?php //%255B61007a1bc83e1a7d5ccbdfe34f63d064%255D%255B1%255D
+
+return [PHP_INT_MAX, static function () { return \Symfony\Component\VarExporter\Internal\Hydrator::hydrate(
+    $o = [
+        clone (($p = &\Symfony\Component\VarExporter\Internal\Registry::$prototypes)['Doctrine\\ORM\\Query\\ParserResult'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ParserResult')),
+        clone ($p['Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\Exec\\SingleSelectExecutor')),
+        clone ($p['Doctrine\\ORM\\Query\\ResultSetMapping'] ?? \Symfony\Component\VarExporter\Internal\Registry::p('Doctrine\\ORM\\Query\\ResultSetMapping')),
+    ],
+    null,
+    [
+        'Doctrine\\ORM\\Query\\ParserResult' => [
+            '_sqlExecutor' => [
+                $o[1],
+            ],
+            '_resultSetMapping' => [
+                $o[2],
+            ],
+            '_parameterMappings' => [
+                [
+                    'locale' => [
+                        0,
+                    ],
+                    'parentCode' => [
+                        1,
+                    ],
+                ],
+            ],
+        ],
+        'Doctrine\\ORM\\Query\\Exec\\AbstractSqlExecutor' => [
+            '_sqlStatements' => [
+                1 => 'SELECT s0_.code AS code_0, s0_.tree_left AS tree_left_1, s0_.tree_right AS tree_right_2, s0_.tree_level AS tree_level_3, s0_.position AS position_4, s0_.id AS id_5, s0_.created_at AS created_at_6, s0_.updated_at AS updated_at_7, s1_.name AS name_8, s1_.slug AS slug_9, s1_.description AS description_10, s1_.id AS id_11, s1_.locale AS locale_12, s2_.code AS code_13, s2_.tree_left AS tree_left_14, s2_.tree_right AS tree_right_15, s2_.tree_level AS tree_level_16, s2_.position AS position_17, s2_.id AS id_18, s2_.created_at AS created_at_19, s2_.updated_at AS updated_at_20, s0_.tree_root AS tree_root_21, s0_.parent_id AS parent_id_22, s1_.translatable_id AS translatable_id_23, s2_.tree_root AS tree_root_24, s2_.parent_id AS parent_id_25 FROM sylius_taxon s0_ LEFT JOIN sylius_taxon_translation s1_ ON s0_.id = s1_.translatable_id INNER JOIN sylius_taxon s3_ ON s0_.parent_id = s3_.id LEFT JOIN sylius_taxon s2_ ON s0_.id = s2_.parent_id WHERE s1_.locale = ? AND s3_.code = ? ORDER BY s0_.position ASC, s2_.position ASC',
+            ],
+        ],
+        'stdClass' => [
+            'aliasMap' => [
+                2 => [
+                    'o' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'translation' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'child' => 'App\\Entity\\Taxonomy\\Taxon',
+                ],
+            ],
+            'relationMap' => [
+                2 => [
+                    'translation' => 'translations',
+                    'child' => 'children',
+                ],
+            ],
+            'parentAliasMap' => [
+                2 => [
+                    'translation' => 'o',
+                    'child' => 'o',
+                ],
+            ],
+            'fieldMappings' => [
+                2 => [
+                    'code_0' => 'code',
+                    'tree_left_1' => 'left',
+                    'tree_right_2' => 'right',
+                    'tree_level_3' => 'level',
+                    'position_4' => 'position',
+                    'id_5' => 'id',
+                    'created_at_6' => 'createdAt',
+                    'updated_at_7' => 'updatedAt',
+                    'name_8' => 'name',
+                    'slug_9' => 'slug',
+                    'description_10' => 'description',
+                    'id_11' => 'id',
+                    'locale_12' => 'locale',
+                    'code_13' => 'code',
+                    'tree_left_14' => 'left',
+                    'tree_right_15' => 'right',
+                    'tree_level_16' => 'level',
+                    'position_17' => 'position',
+                    'id_18' => 'id',
+                    'created_at_19' => 'createdAt',
+                    'updated_at_20' => 'updatedAt',
+                ],
+            ],
+            'typeMappings' => [
+                2 => [
+                    'tree_root_21' => 'integer',
+                    'parent_id_22' => 'integer',
+                    'translatable_id_23' => 'integer',
+                    'tree_root_24' => 'integer',
+                    'parent_id_25' => 'integer',
+                ],
+            ],
+            'entityMappings' => [
+                2 => [
+                    'o' => null,
+                ],
+            ],
+            'metaMappings' => [
+                2 => [
+                    'tree_root_21' => 'tree_root',
+                    'parent_id_22' => 'parent_id',
+                    'translatable_id_23' => 'translatable_id',
+                    'tree_root_24' => 'tree_root',
+                    'parent_id_25' => 'parent_id',
+                ],
+            ],
+            'columnOwnerMap' => [
+                2 => [
+                    'code_0' => 'o',
+                    'tree_left_1' => 'o',
+                    'tree_right_2' => 'o',
+                    'tree_level_3' => 'o',
+                    'position_4' => 'o',
+                    'id_5' => 'o',
+                    'created_at_6' => 'o',
+                    'updated_at_7' => 'o',
+                    'name_8' => 'translation',
+                    'slug_9' => 'translation',
+                    'description_10' => 'translation',
+                    'id_11' => 'translation',
+                    'locale_12' => 'translation',
+                    'code_13' => 'child',
+                    'tree_left_14' => 'child',
+                    'tree_right_15' => 'child',
+                    'tree_level_16' => 'child',
+                    'position_17' => 'child',
+                    'id_18' => 'child',
+                    'created_at_19' => 'child',
+                    'updated_at_20' => 'child',
+                    'tree_root_21' => 'o',
+                    'parent_id_22' => 'o',
+                    'translatable_id_23' => 'translation',
+                    'tree_root_24' => 'child',
+                    'parent_id_25' => 'child',
+                ],
+            ],
+            'indexByMap' => [
+                2 => [
+                    'translation' => 'locale_12',
+                ],
+            ],
+            'declaringClasses' => [
+                2 => [
+                    'code_0' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_left_1' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_right_2' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_level_3' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'position_4' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'id_5' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'created_at_6' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'updated_at_7' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'name_8' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'slug_9' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'description_10' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'id_11' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'locale_12' => 'App\\Entity\\Taxonomy\\TaxonTranslation',
+                    'code_13' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_left_14' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_right_15' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'tree_level_16' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'position_17' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'id_18' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'created_at_19' => 'App\\Entity\\Taxonomy\\Taxon',
+                    'updated_at_20' => 'App\\Entity\\Taxonomy\\Taxon',
+                ],
+            ],
+        ],
+    ],
+    $o[0],
+    []
+); }];
