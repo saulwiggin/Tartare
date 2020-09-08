@@ -1,8 +1,8 @@
-# Each route describes how an incoming URL is going to be processed by Platform.sh.
-"https://{default}/":
+"http://{all}/":
     type: upstream
-    upstream: "app:http"
-
-"https://www.{default}/":
-    type: redirect
-    to: "https://{default}/"
+    # Route requests to the "app" application
+    upstream: "tartare:http"
+    
+"https://*.{default}/":
+    type: upstream
+    upstream: "tartare:http"
