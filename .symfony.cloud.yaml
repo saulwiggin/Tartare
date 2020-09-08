@@ -11,6 +11,7 @@ size: AUTO
 disk: 1070
 
 mounts:
+    '/var': { source: local, source_path: var }
     '/public/assets': { source: local, source_path: assets }
     '/public/bundles': { source: local, source_path: bundles }
     '/public/media': { source: local, source_path: media }
